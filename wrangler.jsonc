@@ -1,0 +1,27 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "eu-ai-act-compliance-d1",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-03-03",
+    "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "eu-ai-act-compliance",
+          "database_id": "05cf87ce-537e-4ace-a3b9-d2de4a0ecce7"
+        }
+    ],
+    "secrets_store_secrets": [
+        {
+            "store_id": "058c29aba2aa402486a98d3cc10946c5",
+            "binding": "SECRET",
+            "secret_name": "eu-ai-act-compliance-secret"
+        }
+    ],
+	"observability": {
+		"enabled": true
+	}
+}

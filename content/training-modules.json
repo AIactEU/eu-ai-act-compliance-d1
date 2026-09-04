@@ -8,7 +8,14 @@
     "duration_min": 20,
     "order_index": 1,
     "content_version": "2026.09",
-    "regulatory_basis": ["Regulation (EU) 2024/1689", "Regulation (EU) 2026/1744", "Article 4", "Article 5", "Article 99", "Article 113"],
+    "regulatory_basis": [
+      "Regulation (EU) 2024/1689",
+      "Regulation (EU) 2026/1744",
+      "Article 4",
+      "Article 5",
+      "Article 99",
+      "Article 113"
+    ],
     "content": {
       "sections": [
         {
@@ -31,31 +38,56 @@
       "quiz": [
         {
           "question": "When did AI literacy obligations under Article 4 come into force?",
-          "options": ["1 August 2024", "2 February 2025", "2 August 2026", "2 December 2027"],
+          "options": [
+            "1 August 2024",
+            "2 February 2025",
+            "2 August 2026",
+            "2 December 2027"
+          ],
           "correct": 1,
           "explanation": "AI literacy obligations and the prohibited-practice bans took effect on 2 February 2025. The 2026 amendments softened the wording of Article 4 but did not change the date."
         },
         {
           "question": "Which risk tier results in AI systems being banned?",
-          "options": ["High Risk", "Limited Risk", "Unacceptable Risk", "Minimal Risk"],
+          "options": [
+            "High Risk",
+            "Limited Risk",
+            "Unacceptable Risk",
+            "Minimal Risk"
+          ],
           "correct": 2,
           "explanation": "Unacceptable-risk AI practices are prohibited under Article 5 of the EU AI Act."
         },
         {
           "question": "Does the EU AI Act apply to companies based outside the EU?",
-          "options": ["No, only EU-based companies", "Yes, if their AI outputs affect people in the EU", "Only if they have an EU office", "Only for high-risk systems"],
+          "options": [
+            "No, only EU-based companies",
+            "Yes, if their AI outputs affect people in the EU",
+            "Only if they have an EU office",
+            "Only for high-risk systems"
+          ],
           "correct": 1,
           "explanation": "The Act has extraterritorial reach. It applies to any provider or deployer whose AI system's output is used in the EU."
         },
         {
           "question": "Under the 2026 amendments, what is the latest date on which stand-alone (Annex III) high-risk obligations apply?",
-          "options": ["2 August 2026", "2 December 2026", "2 December 2027", "2 August 2028"],
+          "options": [
+            "2 August 2026",
+            "2 December 2026",
+            "2 December 2027",
+            "2 August 2028"
+          ],
           "correct": 2,
           "explanation": "The Digital Omnibus deferred Annex III high-risk obligations to six months after a Commission decision on standards availability, with a hard backstop of 2 December 2027. Annex I embedded systems have a backstop of 2 August 2028."
         },
         {
           "question": "What is the maximum fine for using prohibited AI practices?",
-          "options": ["EUR 7.5 million or 1%", "EUR 15 million or 3%", "EUR 35 million or 7%", "EUR 50 million or 10%"],
+          "options": [
+            "EUR 7.5 million or 1%",
+            "EUR 15 million or 3%",
+            "EUR 35 million or 7%",
+            "EUR 50 million or 10%"
+          ],
           "correct": 2,
           "explanation": "Prohibited practices carry fines of up to EUR 35 million or 7% of global annual turnover, whichever is higher."
         }
@@ -71,7 +103,15 @@
     "duration_min": 15,
     "order_index": 2,
     "content_version": "2026.09",
-    "regulatory_basis": ["Regulation (EU) 2026/1744", "Article 4", "Article 5", "Article 6(3)", "Article 10(5)", "Article 50", "Article 113"],
+    "regulatory_basis": [
+      "Regulation (EU) 2026/1744",
+      "Article 4",
+      "Article 5",
+      "Article 6(3)",
+      "Article 10(5)",
+      "Article 50",
+      "Article 113"
+    ],
     "content": {
       "sections": [
         {
@@ -91,6 +131,10 @@
           "body": "• AI literacy (Article 4): providers and deployers must take measures to support AI literacy of their staff. They do not have to guarantee a specific level. The Commission and Member States will publish practical examples.\n\n• New prohibition (Article 5): AI practices aimed at generating non-consensual sexual or intimate imagery, or child sexual abuse material, are banned. So-called 'nudification' tools fall squarely within this.\n\n• Article 6(3) self-assessment: the Commission had proposed dropping the EU-database registration for systems a provider self-assesses as not high-risk. The co-legislators kept the registration, in a simplified form. Document the assessment and register.\n\n• Small mid-caps: SME simplifications (simplified technical documentation, priority access to regulatory sandboxes, lower penalty caps) now also cover small mid-cap companies.\n\n• Bias detection data (Article 10(5)): the legal basis for processing special categories of personal data to detect and correct bias now covers providers and deployers of any AI system, subject to a strict-necessity test and safeguards.\n\n• Centralised supervision: the AI Office has exclusive supervisory competence over AI systems built on a GPAI model developed by the same provider or group, and over AI systems integrated into very large online platforms and search engines designated under the Digital Services Act."
         },
         {
+          "title": "Country Note: Sweden",
+          "body": "Sweden's Integritetsskyddsmyndigheten (IMY) is expected to take the coordinating role as national competent authority for the AI Act, with sector regulators such as Finansinspektionen acting in their own domains. Watch for IMY guidance and for the Riksdag's supplementary Swedish provisions to the AI Act.\n\nAI Sweden, together with Almi, IMY and PwC, has published free introductory material ('AI Act Ready'). It is a good primer, but it does not issue individual completion records. The modules, quizzes and certificates on this platform are designed to produce exactly the documentation the amended Article 4 asks for.\n\nGDPR applies in parallel, and IMY is the supervisory authority there too, so expect an AI matter to touch both regimes. Companies elsewhere in the EU: your national market surveillance authority plays the same role, and the obligations are identical."
+        },
+        {
           "title": "What To Do Now",
           "body": "1. Do not pause high-risk preparation. Inventory, risk classification, Annex IV documentation and quality management take longer than the time left, and the Commission decision may start the six-month countdown before the backstop.\n\n2. Audit every customer-facing or content-generating AI system against Article 50. These rules are live now. If a legacy generative system is not yet marking output, it must be by 2 December 2026.\n\n3. Keep AI literacy training and completion records. The measures-based wording of Article 4 makes documented training the simplest evidence.\n\n4. Watch for the Commission's standards-availability decision and for EN 18286 and its companion standards being cited in the Official Journal.\n\n5. If you are an SME or small mid-cap, use the simplified documentation form and sandbox access, but note the requirements are the same."
         }
@@ -98,25 +142,45 @@
       "quiz": [
         {
           "question": "When did the Digital Omnibus on AI enter into force?",
-          "options": ["2 August 2026", "27 July 2026", "7 May 2026", "1 January 2027"],
+          "options": [
+            "2 August 2026",
+            "27 July 2026",
+            "7 May 2026",
+            "1 January 2027"
+          ],
           "correct": 1,
           "explanation": "Regulation (EU) 2026/1744 was published in the Official Journal on 24 July 2026 and entered into force three days later, on 27 July 2026."
         },
         {
           "question": "What does the deferral of high-risk obligations mean in practice?",
-          "options": ["High-risk requirements were removed", "The deadlines moved; the requirements are unchanged", "Only SMEs must comply", "Annex III was deleted"],
+          "options": [
+            "High-risk requirements were removed",
+            "The deadlines moved; the requirements are unchanged",
+            "Only SMEs must comply",
+            "Annex III was deleted"
+          ],
           "correct": 1,
           "explanation": "The Omnibus changed the application dates and linked them to a Commission decision on standards. The substantive requirements in Articles 9 to 17, 26 and 43 are unchanged."
         },
         {
           "question": "Which obligation applied on 2 August 2026 as originally scheduled?",
-          "options": ["Annex III high-risk obligations", "Article 50 transparency obligations", "Annex I embedded high-risk obligations", "None; everything was deferred"],
+          "options": [
+            "Annex III high-risk obligations",
+            "Article 50 transparency obligations",
+            "Annex I embedded high-risk obligations",
+            "None; everything was deferred"
+          ],
           "correct": 1,
           "explanation": "Article 50 transparency duties and the enforcement powers of the AI Office and national authorities applied from 2 August 2026. Only the high-risk obligations were deferred."
         },
         {
           "question": "By when must generative AI systems already on the market before 2 August 2026 implement machine-readable marking?",
-          "options": ["2 December 2026", "2 February 2027", "2 December 2027", "2 August 2028"],
+          "options": [
+            "2 December 2026",
+            "2 February 2027",
+            "2 December 2027",
+            "2 August 2028"
+          ],
           "correct": 0,
           "explanation": "The Omnibus gave legacy generative systems a four-month grace period for Article 50(2) marking, ending 2 December 2026."
         }
@@ -132,7 +196,12 @@
     "duration_min": 25,
     "order_index": 3,
     "content_version": "2026.09",
-    "regulatory_basis": ["Article 3(1)", "Article 3(63)", "Article 25", "Article 50"],
+    "regulatory_basis": [
+      "Article 3(1)",
+      "Article 3(63)",
+      "Article 25",
+      "Article 50"
+    ],
     "content": {
       "sections": [
         {
@@ -151,19 +220,34 @@
       "quiz": [
         {
           "question": "Which of the following is likely an AI system under the Act?",
-          "options": ["A static FAQ page", "A spreadsheet formula", "A customer chatbot built on a large language model", "A printed manual"],
+          "options": [
+            "A static FAQ page",
+            "A spreadsheet formula",
+            "A customer chatbot built on a large language model",
+            "A printed manual"
+          ],
           "correct": 2,
           "explanation": "A chatbot powered by a large language model meets the definition: it is machine-based, operates with autonomy, and infers outputs that influence interactions."
         },
         {
           "question": "What happens if you substantially modify a third-party AI system?",
-          "options": ["Nothing changes; the original provider is still responsible", "You may become the 'provider' and inherit provider obligations", "The system is automatically banned", "You only need to notify the original provider"],
+          "options": [
+            "Nothing changes; the original provider is still responsible",
+            "You may become the 'provider' and inherit provider obligations",
+            "The system is automatically banned",
+            "You only need to notify the original provider"
+          ],
           "correct": 1,
           "explanation": "Under Article 25, substantial modifications that affect compliance or change the intended purpose make the modifier the new provider."
         },
         {
           "question": "What is the first step toward EU AI Act compliance?",
-          "options": ["Hiring a compliance officer", "Identifying all AI systems your organisation uses", "Registering with the EU AI Office", "Applying for CE marking"],
+          "options": [
+            "Hiring a compliance officer",
+            "Identifying all AI systems your organisation uses",
+            "Registering with the EU AI Office",
+            "Applying for CE marking"
+          ],
           "correct": 1,
           "explanation": "You cannot assess risk or meet obligations if you don't know which AI systems your organisation uses. Inventory is step one."
         }
@@ -179,7 +263,13 @@
     "duration_min": 20,
     "order_index": 4,
     "content_version": "2026.09",
-    "regulatory_basis": ["Article 4", "Article 50", "Articles 9-17", "Article 26", "Article 73"],
+    "regulatory_basis": [
+      "Article 4",
+      "Article 50",
+      "Articles 9-17",
+      "Article 26",
+      "Article 73"
+    ],
     "content": {
       "sections": [
         {
@@ -202,21 +292,138 @@
       "quiz": [
         {
           "question": "Who in your organisation needs AI literacy training?",
-          "options": ["Only the IT department", "Only managers and executives", "Everyone who operates or uses AI systems on the organisation's behalf", "Only the compliance officer"],
+          "options": [
+            "Only the IT department",
+            "Only managers and executives",
+            "Everyone who operates or uses AI systems on the organisation's behalf",
+            "Only the compliance officer"
+          ],
           "correct": 2,
           "explanation": "Article 4 requires measures supporting AI literacy for all personnel who operate or use AI systems, regardless of their role."
         },
         {
           "question": "What is the general deadline for a provider to report a serious incident under Article 73?",
-          "options": ["Within 24 hours", "Within 72 hours", "Immediately, and no later than 15 days after becoming aware", "At the next annual review"],
+          "options": [
+            "Within 24 hours",
+            "Within 72 hours",
+            "Immediately, and no later than 15 days after becoming aware",
+            "At the next annual review"
+          ],
           "correct": 2,
           "explanation": "Article 73 sets a general limit of 15 days from awareness, shortened to 2 days for widespread infringements or critical-infrastructure disruption and 10 days in the event of death."
         },
         {
           "question": "Do Article 50 transparency obligations apply only to high-risk AI systems?",
-          "options": ["Yes, only high-risk", "No, they apply to any AI system that interacts with people or generates content", "Only to prohibited systems", "Only to GPAI models"],
+          "options": [
+            "Yes, only high-risk",
+            "No, they apply to any AI system that interacts with people or generates content",
+            "Only to prohibited systems",
+            "Only to GPAI models"
+          ],
           "correct": 1,
           "explanation": "Article 50 applies regardless of risk level, and it has applied since 2 August 2026."
+        }
+      ]
+    }
+  },
+  {
+    "id": "mod_article50_readiness",
+    "title": "Article 50 Readiness Audit",
+    "description": "A practical, role-agnostic walkthrough of the transparency obligations in force since 2 August 2026: find the systems in scope, fix disclosures, verify marking, label content, and keep the evidence.",
+    "category": "foundation",
+    "tier_required": "starter",
+    "duration_min": 25,
+    "order_index": 5,
+    "content_version": "2026.09",
+    "regulatory_basis": [
+      "Article 50",
+      "Article 5(1)(f)",
+      "Regulation (EU) 2026/1744",
+      "Code of Practice on marking and labelling AI-generated content",
+      "Commission guidelines on Article 50 (July 2026)"
+    ],
+    "content": {
+      "sections": [
+        {
+          "title": "Why Article 50 Is the Obligation to Fix First",
+          "body": "Most of the AI Act's heavy requirements were deferred by the 2026 Digital Omnibus. Article 50 was not. Since 2 August 2026 the transparency obligations apply to every organisation whose AI systems talk to people or generate content, and market surveillance authorities have had their enforcement powers since the same day.\n\nThat makes Article 50 the obligation most small and medium-sized companies will actually be asked about first. It is also the cheapest to get right: it is about disclosure, labelling and evidence, not about conformity assessment or notified bodies.\n\nArticle 50 has four duties:\n\n• 50(1): systems that interact with people must tell them they are dealing with AI\n• 50(2): providers of generative AI must mark output in a machine-readable way\n• 50(3): deployers of emotion recognition or biometric categorisation must inform the people exposed\n• 50(4): deployers must label deepfakes and AI-generated text published on matters of public interest\n\nThe Commission confirmed the Code of Practice on marking and labelling AI-generated content and published its final Article 50 guidelines in July 2026. Following the Code is treated as evidence of compliance."
+        },
+        {
+          "title": "Step 1: Find Everything in Scope",
+          "body": "Start from your AI inventory and tag each system with three questions:\n\n1. Does it interact directly with people? Chatbots, voice bots, assistants, automated replies.\n2. Does it generate text, images, audio or video that leaves the organisation? Copy generators, image tools, voice cloning, video avatars, summarisers, translation.\n3. Does it recognise emotions or categorise people by biometric data? If so, is it used in the workplace or in education? That use is prohibited under Article 5(1)(f), except for medical or safety reasons.\n\nThen record, for each generative system, whether it was placed on the market before 2 August 2026. Those legacy systems have until 2 December 2026 to implement machine-readable marking. Everything placed on the market from 2 August 2026 must comply immediately.\n\nTypical finding in a 30-person company: one website chatbot, two or three generative tools used by marketing and sales, a support-desk AI feature nobody registered, and a meeting summariser. All are in scope."
+        },
+        {
+          "title": "Step 2: Fix the Disclosure (Article 50(1))",
+          "body": "People must be informed that they are interacting with an AI system, at the latest at the first interaction, unless it is obvious to a reasonably well-informed and observant person. A line in the terms of service is not enough. The guidelines expect a clear, timely, accessible notice.\n\nWording that works for a chatbot: 'You are chatting with an AI assistant. A human colleague can take over at any time; type \"human\" to ask.'\n\nFor voice systems, announce it audibly before the conversation starts, not only in a menu the caller can skip. When the AI hands off to a person, say so, so the person on the other end always knows who is talking.\n\nCheck accessibility: screen-reader readable, available in every language the service is offered in, and visible without hovering. Article 50(5) requires the information to be clear, distinguishable and accessible to persons with disabilities.\n\nEvidence to keep: a dated screenshot or recording of the disclosure in the live interface."
+        },
+        {
+          "title": "Step 3: Verify Machine-Readable Marking (Article 50(2))",
+          "body": "The marking duty is on the provider of the generative system. If you build one, its output must be marked in a machine-readable format that is effective, interoperable, robust and reliable as far as technically feasible. In practice you layer techniques: an imperceptible watermark plus provenance metadata such as C2PA content credentials, and a way for others to detect the marks.\n\nIf you use a third-party tool, you are the deployer. Your job is to confirm, in writing, how the vendor marks output and whether it has signed the Code of Practice, and to make sure your own editing and publishing pipeline does not strip the marks. Test the real path: generate, edit, resize, upload to your website and to social media, then check the marks survive.\n\nFor legacy systems that are not yet marking output, write a dated remediation plan with an owner and a fallback if the vendor will not be ready by 2 December 2026.\n\nEvidence to keep: vendor statements, a technical note on your own marking method, and a pipeline test record."
+        },
+        {
+          "title": "Step 4: Label Deepfakes and Public-Interest Text (Article 50(4))",
+          "body": "Deployers must visibly label AI-generated or manipulated image, audio or video content that resembles real people, places, objects or events. Put the label on the asset itself, not only in a caption that can be separated from it. For evidently artistic, satirical or fictional work the label can be lighter so it does not spoil the work.\n\nAI-generated or manipulated text published to inform the public on matters of public interest must be labelled too, unless a named person has reviewed it and holds editorial responsibility. Decide per channel whether you label or apply human review, and keep a review log for anything you rely on the exemption for.\n\nContent created before 2 August 2026 does not have to be relabelled. Purely assistive edits, such as spell-checking or minor image adjustments, are outside the marking duty.\n\nWrite a one-page content policy: who labels what, in which wording, and which exceptions apply. Link it from the marketing handbook."
+        },
+        {
+          "title": "Step 5: Keep the Evidence and Assign an Owner",
+          "body": "Authorities can request information and evidence at short notice. Store the screenshots, vendor statements, policies and test records in one indexed folder, and name one person who owns Article 50 compliance and reviews the checklist at least every six months.\n\nTwo more checks before you close the audit:\n\n• Emotion recognition or biometric categorisation used outside the workplace must be disclosed to the people exposed, and the personal data processing must comply with GDPR.\n• No system in the inventory generates non-consensual intimate imagery or can be used as a 'nudification' tool. That is prohibited outright since the 2026 amendments.\n\nStaff who operate chatbots or produce AI-generated content should complete this module. That also counts toward your Article 4 AI literacy measures, so record the completion.\n\nThe Article 50 Transparency Readiness checklist in Comply AI mirrors these five steps with progress tracking and an evidence hint for every item."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Since when have the Article 50 transparency obligations applied?",
+          "options": [
+            "2 February 2025",
+            "2 August 2026",
+            "2 December 2027",
+            "They were deferred with the high-risk rules"
+          ],
+          "correct": 1,
+          "explanation": "Article 50 kept its original date of 2 August 2026. Only the high-risk obligations were deferred by the Digital Omnibus."
+        },
+        {
+          "question": "Who carries the duty to mark generative AI output in a machine-readable way?",
+          "options": [
+            "The deployer",
+            "The provider of the generative AI system",
+            "The end user",
+            "The market surveillance authority"
+          ],
+          "correct": 1,
+          "explanation": "Article 50(2) places the marking duty on providers. Deployers must confirm the vendor's approach and avoid stripping the marks."
+        },
+        {
+          "question": "A legacy generative system placed on the market in 2025 that does not yet mark output must do so by:",
+          "options": [
+            "2 August 2026",
+            "2 December 2026",
+            "2 December 2027",
+            "2 August 2028"
+          ],
+          "correct": 1,
+          "explanation": "The Omnibus grace period for systems already on the market before 2 August 2026 ends on 2 December 2026."
+        },
+        {
+          "question": "When may AI-generated text on a matter of public interest be published without a label?",
+          "options": [
+            "Never",
+            "When a named person has reviewed it and holds editorial responsibility",
+            "When it is shorter than 500 words",
+            "When the AI tool is open source"
+          ],
+          "correct": 1,
+          "explanation": "Article 50(4) lifts the labelling duty for text that has undergone human review with someone holding editorial responsibility."
+        },
+        {
+          "question": "Which of these is prohibited rather than merely subject to transparency?",
+          "options": [
+            "A website chatbot",
+            "Emotion recognition of employees at work",
+            "An AI-generated product image with a label",
+            "A meeting summariser"
+          ],
+          "correct": 1,
+          "explanation": "Article 5(1)(f) prohibits emotion recognition in the workplace and in education, except for medical or safety reasons."
         }
       ]
     }
@@ -228,9 +435,16 @@
     "category": "technical",
     "tier_required": "pro",
     "duration_min": 30,
-    "order_index": 5,
+    "order_index": 6,
     "content_version": "2026.09",
-    "regulatory_basis": ["Article 6", "Annex I", "Annex III", "Article 49", "Article 111", "Article 113"],
+    "regulatory_basis": [
+      "Article 6",
+      "Annex I",
+      "Annex III",
+      "Article 49",
+      "Article 111",
+      "Article 113"
+    ],
     "content": {
       "sections": [
         {
@@ -253,19 +467,34 @@
       "quiz": [
         {
           "question": "How many high-risk use case areas does Annex III define?",
-          "options": ["4", "6", "8", "12"],
+          "options": [
+            "4",
+            "6",
+            "8",
+            "12"
+          ],
           "correct": 2,
           "explanation": "Annex III lists eight broad areas covering biometrics, critical infrastructure, education, employment, essential services, law enforcement, migration, and justice."
         },
         {
           "question": "Under Article 6(3), when can a provider claim an Annex III system is NOT high-risk?",
-          "options": ["Whenever they want; it's voluntary", "When the system does not pose a significant risk to health, safety, or fundamental rights and does not profile people", "Only if the system is open-source", "Only for systems placed on the market before 2027"],
+          "options": [
+            "Whenever they want; it's voluntary",
+            "When the system does not pose a significant risk to health, safety, or fundamental rights and does not profile people",
+            "Only if the system is open-source",
+            "Only for systems placed on the market before 2027"
+          ],
           "correct": 1,
           "explanation": "The exception applies when the system does not pose a significant risk of harm, for example because it performs a narrow procedural or preparatory task. Systems that profile natural persons are always high-risk."
         },
         {
           "question": "Under the 2026 amendments, a provider relying on the Article 6(3) exception must:",
-          "options": ["Do nothing further", "Document the assessment and register the system through the simplified procedure", "Obtain Notified Body approval", "Notify the AI Office within 72 hours"],
+          "options": [
+            "Do nothing further",
+            "Document the assessment and register the system through the simplified procedure",
+            "Obtain Notified Body approval",
+            "Notify the AI Office within 72 hours"
+          ],
           "correct": 1,
           "explanation": "The co-legislators rejected the proposal to drop registration. Article 6(3) systems must still be documented and registered, via a simplified registration."
         }
@@ -279,9 +508,14 @@
     "category": "technical",
     "tier_required": "pro",
     "duration_min": 35,
-    "order_index": 6,
+    "order_index": 7,
     "content_version": "2026.09",
-    "regulatory_basis": ["Article 11", "Annex IV", "Article 17", "Article 43"],
+    "regulatory_basis": [
+      "Article 11",
+      "Annex IV",
+      "Article 17",
+      "Article 43"
+    ],
     "content": {
       "sections": [
         {
@@ -300,19 +534,34 @@
       "quiz": [
         {
           "question": "When must Annex IV documentation be prepared?",
-          "options": ["After the system has been on the market for 1 year", "Before the system is placed on the market or put into service", "Only when requested by authorities", "Only after a serious incident"],
+          "options": [
+            "After the system has been on the market for 1 year",
+            "Before the system is placed on the market or put into service",
+            "Only when requested by authorities",
+            "Only after a serious incident"
+          ],
           "correct": 1,
           "explanation": "Technical documentation must be drawn up before the system is placed on the market, as part of the conformity assessment process."
         },
         {
           "question": "How many sections does Annex IV require in technical documentation?",
-          "options": ["5", "8", "11", "15"],
+          "options": [
+            "5",
+            "8",
+            "11",
+            "15"
+          ],
           "correct": 2,
           "explanation": "Annex IV specifies 11 documentation sections covering everything from general description to modification history."
         },
         {
           "question": "Which organisations may use the simplified technical documentation form?",
-          "options": ["Any provider", "SMEs, start-ups and, since 2026, small mid-caps", "Only public bodies", "Only providers of Annex I products"],
+          "options": [
+            "Any provider",
+            "SMEs, start-ups and, since 2026, small mid-caps",
+            "Only public bodies",
+            "Only providers of Annex I products"
+          ],
           "correct": 1,
           "explanation": "Article 11 allows SMEs and start-ups to use the Commission's simplified form; the Digital Omnibus extended this to small mid-cap companies."
         }
@@ -326,9 +575,13 @@
     "category": "technical",
     "tier_required": "pro",
     "duration_min": 30,
-    "order_index": 7,
+    "order_index": 8,
     "content_version": "2026.09",
-    "regulatory_basis": ["Article 10", "Article 10(5)", "GDPR Articles 6, 9, 22, 35"],
+    "regulatory_basis": [
+      "Article 10",
+      "Article 10(5)",
+      "GDPR Articles 6, 9, 22, 35"
+    ],
     "content": {
       "sections": [
         {
@@ -347,19 +600,34 @@
       "quiz": [
         {
           "question": "What must training datasets for high-risk AI systems be?",
-          "options": ["As large as possible", "Relevant, representative, and as free of errors as possible", "Only from EU sources", "Open-source and publicly available"],
+          "options": [
+            "As large as possible",
+            "Relevant, representative, and as free of errors as possible",
+            "Only from EU sources",
+            "Open-source and publicly available"
+          ],
           "correct": 1,
           "explanation": "Article 10 requires training data to be relevant, sufficiently representative, as free of errors as possible, and appropriate to the intended purpose."
         },
         {
           "question": "Does the EU AI Act replace GDPR?",
-          "options": ["Yes, completely", "No, both apply simultaneously", "Only for high-risk systems", "Only after December 2027"],
+          "options": [
+            "Yes, completely",
+            "No, both apply simultaneously",
+            "Only for high-risk systems",
+            "Only after December 2027"
+          ],
           "correct": 1,
           "explanation": "The AI Act complements GDPR. Both regulations apply when personal data is processed in connection with AI systems."
         },
         {
           "question": "Under the 2026 amendments, who may process special-category personal data strictly for bias detection and correction?",
-          "options": ["Only providers of high-risk AI systems", "Providers and deployers of any AI system, where strictly necessary and with safeguards", "Nobody; it is prohibited", "Only public authorities"],
+          "options": [
+            "Only providers of high-risk AI systems",
+            "Providers and deployers of any AI system, where strictly necessary and with safeguards",
+            "Nobody; it is prohibited",
+            "Only public authorities"
+          ],
           "correct": 1,
           "explanation": "The Digital Omnibus extended the Article 10(5) legal basis to all AI systems and models, while reintroducing a strict-necessity standard and safeguards."
         }
@@ -373,9 +641,15 @@
     "category": "leadership",
     "tier_required": "pro",
     "duration_min": 25,
-    "order_index": 8,
+    "order_index": 9,
     "content_version": "2026.09",
-    "regulatory_basis": ["Article 17", "Article 40", "Article 4", "Article 99", "EN 18286:2026"],
+    "regulatory_basis": [
+      "Article 17",
+      "Article 40",
+      "Article 4",
+      "Article 99",
+      "EN 18286:2026"
+    ],
     "content": {
       "sections": [
         {
@@ -398,19 +672,34 @@
       "quiz": [
         {
           "question": "What is the mandatory first step in AI compliance?",
-          "options": ["Hiring external consultants", "Creating an AI system inventory", "Applying for CE marking", "Filing a DPIA"],
+          "options": [
+            "Hiring external consultants",
+            "Creating an AI system inventory",
+            "Applying for CE marking",
+            "Filing a DPIA"
+          ],
           "correct": 1,
           "explanation": "You cannot assess risk or meet obligations without first knowing which AI systems your organisation uses, develops, or deploys."
         },
         {
           "question": "Which article requires a quality management system for high-risk AI?",
-          "options": ["Article 4", "Article 10", "Article 17", "Article 50"],
+          "options": [
+            "Article 4",
+            "Article 10",
+            "Article 17",
+            "Article 50"
+          ],
           "correct": 2,
           "explanation": "Article 17 requires providers of high-risk AI systems to implement a documented quality management system."
         },
         {
           "question": "Which standard, approved in July 2026, specifies the Article 17 quality management system?",
-          "options": ["ISO/IEC 27001", "EN 18286:2026", "prEN 18228", "GDPR"],
+          "options": [
+            "ISO/IEC 27001",
+            "EN 18286:2026",
+            "prEN 18228",
+            "GDPR"
+          ],
           "correct": 1,
           "explanation": "EN 18286:2026 was approved by CEN and CENELEC on 12 July 2026 as the first AI Act harmonised-standard candidate. It is not yet cited in the Official Journal."
         }
@@ -424,9 +713,15 @@
     "category": "technical",
     "tier_required": "pro",
     "duration_min": 30,
-    "order_index": 9,
+    "order_index": 10,
     "content_version": "2026.09",
-    "regulatory_basis": ["Articles 51-56", "Article 101", "Article 111(3)", "Article 50", "GPAI Code of Practice (10 July 2025)"],
+    "regulatory_basis": [
+      "Articles 51-56",
+      "Article 101",
+      "Article 111(3)",
+      "Article 50",
+      "GPAI Code of Practice (10 July 2025)"
+    ],
     "content": {
       "sections": [
         {
@@ -453,25 +748,45 @@
       "quiz": [
         {
           "question": "Since when have GPAI model obligations applied to new models?",
-          "options": ["2 February 2025", "2 August 2025", "2 August 2026", "2 December 2027"],
+          "options": [
+            "2 February 2025",
+            "2 August 2025",
+            "2 August 2026",
+            "2 December 2027"
+          ],
           "correct": 1,
           "explanation": "Chapter V obligations apply to GPAI models placed on the market from 2 August 2025. Legacy models have until 2 August 2027."
         },
         {
           "question": "At what training-compute level is a GPAI model presumed to have systemic risk?",
-          "options": ["10^23 FLOPs", "10^25 FLOPs", "10^27 FLOPs", "There is no threshold"],
+          "options": [
+            "10^23 FLOPs",
+            "10^25 FLOPs",
+            "10^27 FLOPs",
+            "There is no threshold"
+          ],
           "correct": 1,
           "explanation": "Article 51 presumes systemic risk when cumulative training compute exceeds 10^25 floating-point operations; the Commission can also designate models."
         },
         {
           "question": "What are the three chapters of the GPAI Code of Practice?",
-          "options": ["Transparency, Copyright, and Safety and Security", "Risk, Data, and Logging", "Ethics, Bias, and Fairness", "Marking, Labelling, and Detection"],
+          "options": [
+            "Transparency, Copyright, and Safety and Security",
+            "Risk, Data, and Logging",
+            "Ethics, Bias, and Fairness",
+            "Marking, Labelling, and Detection"
+          ],
           "correct": 0,
           "explanation": "The final Code published on 10 July 2025 has Transparency and Copyright chapters for all providers and a Safety and Security chapter for systemic-risk models."
         },
         {
           "question": "From when can the Commission fine GPAI providers?",
-          "options": ["2 August 2025", "2 August 2026", "2 December 2027", "It cannot; only national authorities can"],
+          "options": [
+            "2 August 2025",
+            "2 August 2026",
+            "2 December 2027",
+            "It cannot; only national authorities can"
+          ],
           "correct": 1,
           "explanation": "The Commission's power to fine GPAI providers up to EUR 15 million or 3% of turnover applies from 2 August 2026, one year after the obligations themselves."
         }
@@ -485,9 +800,16 @@
     "category": "role_specific",
     "tier_required": "pro",
     "duration_min": 25,
-    "order_index": 10,
+    "order_index": 11,
     "content_version": "2026.09",
-    "regulatory_basis": ["Article 5(1)(f)", "Annex III point 4", "Article 26", "Article 27", "Article 50", "Article 4"],
+    "regulatory_basis": [
+      "Article 5(1)(f)",
+      "Annex III point 4",
+      "Article 26",
+      "Article 27",
+      "Article 50",
+      "Article 4"
+    ],
     "content": {
       "sections": [
         {
@@ -506,19 +828,34 @@
       "quiz": [
         {
           "question": "Under the EU AI Act, AI used for recruitment screening is classified as:",
-          "options": ["Minimal risk", "Limited risk", "High risk", "Unacceptable risk"],
+          "options": [
+            "Minimal risk",
+            "Limited risk",
+            "High risk",
+            "Unacceptable risk"
+          ],
           "correct": 2,
           "explanation": "AI in employment contexts (hiring, evaluation, task allocation) is classified as high-risk under Annex III, point 4."
         },
         {
           "question": "What should HR teams request from AI tool vendors?",
-          "options": ["Source code", "Instructions for use and compliance documentation showing how they meet AI Act requirements", "A written guarantee that the tool is unbiased", "EU citizenship proof"],
+          "options": [
+            "Source code",
+            "Instructions for use and compliance documentation showing how they meet AI Act requirements",
+            "A written guarantee that the tool is unbiased",
+            "EU citizenship proof"
+          ],
           "correct": 1,
           "explanation": "Vendors (providers) must supply instructions for use and compliance documentation. HR teams as deployers should verify this exists and covers the relevant requirements."
         },
         {
           "question": "Using AI to infer employees' emotions from webcam footage during work is:",
-          "options": ["Allowed with consent", "Prohibited, except for medical or safety reasons", "High-risk only", "Minimal risk"],
+          "options": [
+            "Allowed with consent",
+            "Prohibited, except for medical or safety reasons",
+            "High-risk only",
+            "Minimal risk"
+          ],
           "correct": 1,
           "explanation": "Article 5(1)(f) prohibits emotion-recognition AI in the workplace and in education, with narrow exceptions for medical or safety purposes. The ban has applied since 2 February 2025."
         }
@@ -532,9 +869,13 @@
     "category": "role_specific",
     "tier_required": "pro",
     "duration_min": 20,
-    "order_index": 11,
+    "order_index": 12,
     "content_version": "2026.09",
-    "regulatory_basis": ["Article 50", "Article 5", "Code of Practice on marking and labelling AI-generated content"],
+    "regulatory_basis": [
+      "Article 50",
+      "Article 5",
+      "Code of Practice on marking and labelling AI-generated content"
+    ],
     "content": {
       "sections": [
         {
@@ -553,19 +894,34 @@
       "quiz": [
         {
           "question": "Must customers be told they are speaking with an AI chatbot?",
-          "options": ["Only if they ask", "Yes, always, before or at the start of the interaction", "Only for high-risk chatbots", "Only in financial services"],
+          "options": [
+            "Only if they ask",
+            "Yes, always, before or at the start of the interaction",
+            "Only for high-risk chatbots",
+            "Only in financial services"
+          ],
           "correct": 1,
           "explanation": "Article 50(1) requires that people are informed they are interacting with an AI system, unless this is obvious from the circumstances. This has applied since 2 August 2026."
         },
         {
           "question": "Which content must a deployer label under Article 50(4)?",
-          "options": ["All marketing copy", "Deepfakes, and AI-generated text published to inform the public on matters of public interest", "Only images", "Internal drafts"],
+          "options": [
+            "All marketing copy",
+            "Deepfakes, and AI-generated text published to inform the public on matters of public interest",
+            "Only images",
+            "Internal drafts"
+          ],
           "correct": 1,
           "explanation": "Article 50(4) covers deepfakes and public-interest text; the text duty is lifted where a human has reviewed it and holds editorial responsibility."
         },
         {
           "question": "By when must a generative AI system that was already on the market before 2 August 2026 implement machine-readable marking?",
-          "options": ["It never has to", "2 August 2026", "2 December 2026", "2 December 2027"],
+          "options": [
+            "It never has to",
+            "2 August 2026",
+            "2 December 2026",
+            "2 December 2027"
+          ],
           "correct": 2,
           "explanation": "The Digital Omnibus granted a four-month grace period for legacy generative systems, ending 2 December 2026."
         }
@@ -579,9 +935,20 @@
     "category": "role_specific",
     "tier_required": "pro",
     "duration_min": 35,
-    "order_index": 12,
+    "order_index": 13,
     "content_version": "2026.09",
-    "regulatory_basis": ["Article 12", "Article 14", "Article 15", "Article 19", "Article 50(2)", "EN 18286:2026", "prEN 18228", "prEN 18229", "prEN 18282", "prEN 18284"],
+    "regulatory_basis": [
+      "Article 12",
+      "Article 14",
+      "Article 15",
+      "Article 19",
+      "Article 50(2)",
+      "EN 18286:2026",
+      "prEN 18228",
+      "prEN 18229",
+      "prEN 18282",
+      "prEN 18284"
+    ],
     "content": {
       "sections": [
         {
@@ -604,19 +971,34 @@
       "quiz": [
         {
           "question": "What must high-risk AI systems automatically log?",
-          "options": ["Only errors and exceptions", "Events over the system's lifetime that support traceability, including usage periods, matching inputs, and human-oversight identifiers", "Only model performance metrics", "Only user demographics"],
+          "options": [
+            "Only errors and exceptions",
+            "Events over the system's lifetime that support traceability, including usage periods, matching inputs, and human-oversight identifiers",
+            "Only model performance metrics",
+            "Only user demographics"
+          ],
           "correct": 1,
           "explanation": "Article 12 requires automatic recording of events that support traceability and post-market monitoring, with specific fields for biometric identification systems."
         },
         {
           "question": "How long must a provider keep high-risk system logs at minimum?",
-          "options": ["30 days", "At least six months, or longer if the purpose or sector law requires", "System lifetime plus 6 months", "Indefinitely"],
+          "options": [
+            "30 days",
+            "At least six months, or longer if the purpose or sector law requires",
+            "System lifetime plus 6 months",
+            "Indefinitely"
+          ],
           "correct": 1,
           "explanation": "Article 19 requires providers to keep logs for a period appropriate to the intended purpose and of at least six months; deployers have the same minimum under Article 26(6)."
         },
         {
           "question": "Machine-readable marking of AI-generated output is an obligation on:",
-          "options": ["Deployers only", "Providers of generative AI systems", "Only high-risk providers", "Nobody until 2027"],
+          "options": [
+            "Deployers only",
+            "Providers of generative AI systems",
+            "Only high-risk providers",
+            "Nobody until 2027"
+          ],
           "correct": 1,
           "explanation": "Article 50(2) places the marking duty on providers of systems that generate synthetic content. It has applied since 2 August 2026, with a grace period to 2 December 2026 for legacy systems."
         }

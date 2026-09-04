@@ -1,81 +1,76 @@
-# Syncing the Comply AI Flask app with this content
+# Syncing the Comply AI Flask app with this repository
 
-The Flask application in the `AIactEU/CompyAI` repository (`complyAI/`) still carries the
-pre-Omnibus timeline in code and templates. This repository now holds the corrected content in D1
-and in `content/training-modules.json`. The list below is what needs to change on the Flask side.
-It was produced against CompyAI commit `8a78834` and is not applied there by this branch.
+The Flask application in `AIactEU/CompyAI` (`complyAI/`) reads training content, plans and
+checklists from the D1 tables this repository seeds. The matching application changes are prepared
+as a patch in `docs/compyai/commercial-model.patch`, produced against CompyAI commit `8a78834`.
 
-## Option A (recommended): load modules from D1
+## Apply the patch
 
-Replace the hard-coded `TRAINING_MODULES` list in `complyAI/training.py` with a loader that reads
-`training_modules` from D1 through the existing `d1_query` helper. The table columns map one-to-one
-onto the dictionary keys the app already uses; `content` is JSON text with `sections` and `quiz`.
-
-```python
-def _load_modules():
-    rows = d1_query(
-        "SELECT id, title, description, category, tier_required, duration_min, "
-        "order_index, content, content_version FROM training_modules "
-        "WHERE is_published = 1 ORDER BY order_index"
-    )
-    for r in rows:
-        r["content"] = json.loads(r["content"])
-    return rows
+```bash
+cd CompyAI
+git checkout -b commercial-model-2026
+git apply --index /path/to/eu-ai-act-compliance-d1/docs/compyai/commercial-model.patch
+git commit -m "Commercial model 2026: plans, packs, checklists, D1-backed training"
 ```
 
-`get_modules_for_tier`, `get_module_content` and `grade_quiz` keep working unchanged once
-`TRAINING_MODULES` comes from this loader (cache it per process; the content changes rarely).
-Alternatively call this worker: `GET /api/v1/training/modules/:id?include_answers=1` and
-`POST /api/v1/training/modules/:id/grade` with the shared bearer secret.
+Deploy order matters:
 
-## Option B: drop in the JSON
+1. In this repository: `npm run db:migrate:remote && npm run db:seed:remote && npm run deploy`.
+   Migration `0003` adds the plan columns to `tenants` and maps existing `tier` values to
+   `legacy_starter` / `legacy_pro`, so current subscribers keep what they pay for.
+2. Create the Stripe products and prices listed in `docs/PRICING.md` and set the env vars on Render.
+3. Deploy the patched Flask app.
 
-Copy `content/training-modules.json` into the Flask project and set
-`TRAINING_MODULES = json.load(open("training_modules.json"))`. Same shape, no schema change.
+## What the patch changes
 
-## Stale text to fix in CompyAI regardless of option
+`complyAI/plans.py` (new)
+- Loads the `plans` table, caches it, resolves effective entitlements per tenant (pack expiry,
+  per-seat counts, legacy tier mapping), exposes `has_feature`, `checklist_access`, `limit_for`.
 
-`complyAI/training.py`
-
-- Lines 62-65: "2 August 2026 - Full high-risk system requirements apply" and "2 August 2027" for
-  regulated products. Now 2 December 2027 and 2 August 2028 at the latest, with the Commission-decision trigger.
-- Line 6 docstring: fine, but add that content reflects Regulation (EU) 2026/1744.
-- Foundation module 3, "Incident Reporting": "within 72 hours" is wrong. Article 73: 15 days,
-  2 days for widespread infringement or critical-infrastructure disruption, 10 days for death.
-- Foundation module 3, "Obligations for All AI Users (Article 4)": reword to the measures-based
-  obligation introduced in 2026.
-- Foundation module 3, "Transparency Obligations (Article 50)": add "in force since 2 August 2026" and
-  the 2 December 2026 grace period for legacy generative systems.
-- Technical module 1, "Article 6(3)": registration retained via simplified procedure.
-- Technical module 3 quiz option "Only after August 2026": change to "Only after December 2027".
-- Role module (developers), "Logging Requirements": "system lifetime plus 6 months" is wrong.
-  Articles 19 and 26(6): at least six months.
-- Role module (HR): add the Article 5(1)(f) workplace emotion-recognition prohibition.
-- New modules to add: `mod_update_2026` (free) and `mod_gpai_01` (pro). The catalogue is now 12 modules.
-
-`complyAI/templates/login.html`
-
-- Line 198: "High-risk system rules apply from Aug 2, 2026." Replace with, for example:
-  "Transparency rules and enforcement are live since 2 August 2026. High-risk obligations follow by
-  2 December 2027." This is the headline urgency banner on the landing page and is now factually wrong.
-- Line 473: "or 3% of turnover for high-risk system violations" is correct but pair it with the
-  EUR 15 million figure.
-- Line 495: footer year "2025".
-
-`complyAI/templates/dashboard.html`
-
-- Line 394 and the landing-page copy "Mandatory under Article 4 since February 2, 2025" remain correct.
-- Plan cards (lines 490, 513, 535) say "3 modules" and "10+ modules". With this content the counts are:
-  free 2 (foundation 1 + regulatory update), starter 4, pro/enterprise 12.
+`complyAI/training.py` (rewritten)
+- Module content comes from `training_modules` and `training_module_translations` with a
+  five-minute cache. Same function names as before, plus a `locale` argument. Certificates are
+  bilingual and carry the content version.
 
 `complyAI/app.py`
+- `TIERS` removed. Limits, gating and the training tier derive from `plans.resolve_entitlements`.
+- `GET /api/billing/plans` and `POST /api/billing/checkout` (Stripe Checkout, subscription mode for
+  Team and Business, payment mode for the three packs, seats as adjustable quantity).
+- Webhook handles `checkout.session.completed` for packs (sets `plan`, `seats`, `plan_expires_at`),
+  subscription created/updated (plan and seat quantity), and deletion (falls back to Free unless an
+  unexpired pack remains). Other products on the same Stripe account are ignored as before.
+- `GET /api/subscription/status` now returns the resolved plan alongside the Stripe status.
+- Training routes accept `?locale=`, fall back to the tenant's `locale`, then `Accept-Language`.
+- `GET /api/checklists`, `GET /api/checklists/:id`, `PUT /api/checklists/:id/items/:item_id`.
+- `GET /api/training/evidence-report`: printable Article 4 evidence report.
+- Certificates, evidence report and audit trail are gated on plan features, not tier names.
+- `PUT /api/tenant` accepts `locale` (`en` or `sv`).
 
-- `TIERS` "training" values are unchanged. If the free tier should see the two free modules,
-  `get_modules_for_tier("free")` already returns them unlocked, but `TIERS["free"]["training"]` is
-  `"none"`. Decide whether the free regulatory-update module is a lead magnet (set it to `"basic"`) or not.
+`complyAI/templates/dashboard.html`
+- Pricing page rendered from `/api/billing/plans` (subscriptions and a pay-once row); the hard-coded
+  Stripe buy buttons are gone. Current-plan panel shows packs with their expiry.
+- New Checklists page and modal with tick-to-save items, guidance and evidence hints.
+- Training page gets a language switch and an Article 4 evidence report button.
 
-## Housekeeping spotted in CompyAI
+`complyAI/templates/login.html`
+- Urgency banner and hero updated to the amended timeline (Article 50 live since 2 August 2026,
+  high-risk by 2 December 2027).
+- Fifth feature card for Article 50 readiness; module count 13.
+- Pricing section: Free, Team (per seat), Business, plus three pay-once packs.
+- Penalties copy corrected; footer year.
+
+## Verified
+
+`python3 -m py_compile` on all three modules, unit checks of `plans.py` and `training.py` against the
+content JSON, and a Flask test-client run against an in-memory SQLite loaded with this repository's
+migrations and seed (training list and content in both locales, quiz completion, plan gating,
+checkout session creation, pack and subscription webhooks, seat limits, checklist ticking, evidence
+report, legacy tenant mapping). Stripe and Auth0 were stubbed; a live checkout has not been run.
+
+## Housekeeping still open in CompyAI
 
 - `complyAI/.env` is committed with live-looking secrets (Auth0, Stripe, Cloudflare). Rotate them and
   remove the file from the repository before going to market.
 - Seven `login - kopia (n).html` and two `app - kopia (n).py` backup copies are committed. Delete them.
+- `templates/dashboard.html` still embeds the Stripe publishable key in one place after the patch
+  (harmless, but it can go now that Checkout Sessions are used).

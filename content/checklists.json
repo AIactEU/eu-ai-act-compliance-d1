@@ -1,0 +1,330 @@
+[
+  {
+    "id": "chk_article50_readiness",
+    "title": "Article 50 Transparency Readiness",
+    "description": "A step-by-step audit of every AI system that talks to people or generates content, against the transparency obligations in force since 2 August 2026. Work through it once per system, then keep it as evidence.",
+    "legal_basis": "Article 50 of Regulation (EU) 2024/1689 as amended by Regulation (EU) 2026/1744; Code of Practice on marking and labelling AI-generated content; Commission guidelines on Article 50 (July 2026)",
+    "audience": "deployers and providers of chatbots, generative AI, emotion recognition and biometric categorisation",
+    "content_version": "2026.09",
+    "sections": [
+      {
+        "id": "scope",
+        "title": "1. Find every system in scope",
+        "items": [
+          {
+            "id": "scope_interactive",
+            "text": "List every AI system that interacts directly with people: chatbots, voice bots, virtual assistants, automated email or messaging replies.",
+            "guidance": "Include AI features inside SaaS tools you did not build, for example a support-desk bot or a website widget. You are the deployer.",
+            "legal_basis": "Article 50(1)",
+            "role": "both",
+            "evidence": "Inventory entries tagged 'interacts with people'"
+          },
+          {
+            "id": "scope_generative",
+            "text": "List every AI system that generates text, images, audio or video, whether for internal use or publication.",
+            "guidance": "Marketing copy generators, image tools, voice cloning, video avatars, summarisers and translation tools all count if the output leaves the organisation.",
+            "legal_basis": "Article 50(2), 50(4)",
+            "role": "both",
+            "evidence": "Inventory entries tagged 'generates content'"
+          },
+          {
+            "id": "scope_emotion",
+            "text": "List every emotion recognition or biometric categorisation system, and confirm none is used in the workplace or in education.",
+            "guidance": "Workplace and education use is prohibited under Article 5(1)(f) except for medical or safety reasons. Elsewhere it is allowed with disclosure.",
+            "legal_basis": "Article 50(3); Article 5(1)(f)",
+            "role": "deployer",
+            "evidence": "Inventory review note, dated"
+          },
+          {
+            "id": "scope_legacy",
+            "text": "Mark which generative systems were placed on the market or put into service before 2 August 2026.",
+            "guidance": "Those systems have until 2 December 2026 to implement machine-readable marking. Systems placed on the market from 2 August 2026 must comply immediately.",
+            "legal_basis": "Article 50(2) as amended; Regulation (EU) 2026/1744",
+            "role": "provider",
+            "evidence": "Release or go-live date per system"
+          }
+        ]
+      },
+      {
+        "id": "disclosure",
+        "title": "2. Tell people they are dealing with AI (Article 50(1))",
+        "items": [
+          {
+            "id": "disc_wording",
+            "text": "Every chatbot or assistant discloses that it is an AI system at or before the first interaction.",
+            "guidance": "Suggested wording: 'You are chatting with an AI assistant. A human colleague can take over at any time; type \"human\" to ask.' Do not rely on a line in the terms of service.",
+            "legal_basis": "Article 50(1)",
+            "role": "both",
+            "evidence": "Screenshot of the disclosure in the live interface"
+          },
+          {
+            "id": "disc_voice",
+            "text": "Voice and phone systems announce that the caller is speaking with an AI before the conversation starts.",
+            "guidance": "The disclosure must be audible, not only in an IVR menu the caller may skip.",
+            "legal_basis": "Article 50(1)",
+            "role": "both",
+            "evidence": "Call recording or script excerpt"
+          },
+          {
+            "id": "disc_handoff",
+            "text": "Hand-off to a human is disclosed when it happens, so people know when the AI stops and a person starts.",
+            "guidance": "Ambiguity about who is talking is the most common complaint the guidelines highlight.",
+            "legal_basis": "Article 50(1); Commission Article 50 guidelines",
+            "role": "deployer",
+            "evidence": "Conversation design document"
+          },
+          {
+            "id": "disc_accessibility",
+            "text": "The disclosure is accessible: readable by screen readers, available in the languages the service is offered in, and not hidden behind a tooltip.",
+            "guidance": "Article 50(5) requires information to be provided in a clear and distinguishable manner, accessible to persons with disabilities.",
+            "legal_basis": "Article 50(5)",
+            "role": "deployer",
+            "evidence": "Accessibility check note"
+          }
+        ]
+      },
+      {
+        "id": "marking",
+        "title": "3. Machine-readable marking of generated content (Article 50(2))",
+        "items": [
+          {
+            "id": "mark_provider_confirmed",
+            "text": "For each third-party generative system, the vendor has confirmed in writing how its output is marked (watermark, metadata, content credentials) and how it can be detected.",
+            "guidance": "Ask for the vendor's Article 50(2) statement and whether it has signed the Code of Practice on marking and labelling.",
+            "legal_basis": "Article 50(2)",
+            "role": "deployer",
+            "evidence": "Vendor statement on file"
+          },
+          {
+            "id": "mark_own_systems",
+            "text": "For generative systems you provide, output is marked in a machine-readable format that is effective, interoperable, robust and reliable as far as technically feasible.",
+            "guidance": "Layer techniques: an imperceptible watermark plus provenance metadata such as C2PA content credentials. Document what you chose and why.",
+            "legal_basis": "Article 50(2)",
+            "role": "provider",
+            "evidence": "Technical note on marking method; sample output with marks verified"
+          },
+          {
+            "id": "mark_pipeline",
+            "text": "Your editing, compression and publishing pipeline does not strip the marks the model applied.",
+            "guidance": "Test the actual path from generation to publication, including image resizing and social-media upload.",
+            "legal_basis": "Article 50(2)",
+            "role": "both",
+            "evidence": "Pipeline test record"
+          },
+          {
+            "id": "mark_legacy_deadline",
+            "text": "Legacy generative systems (on the market before 2 August 2026) have a dated plan to be marking output by 2 December 2026.",
+            "guidance": "Owner, milestone dates and a fallback if the vendor will not be ready in time.",
+            "legal_basis": "Article 50(2) as amended",
+            "role": "provider",
+            "evidence": "Remediation plan"
+          }
+        ]
+      },
+      {
+        "id": "labelling",
+        "title": "4. Label deepfakes and public-interest text (Article 50(4))",
+        "items": [
+          {
+            "id": "label_deepfake",
+            "text": "Any published image, audio or video that depicts real people, places or events and is AI-generated or manipulated carries a visible label.",
+            "guidance": "Keep the label on the asset itself, not only in a caption that can be separated from it. Artistic or satirical works may use a lighter label that does not spoil the work.",
+            "legal_basis": "Article 50(4)",
+            "role": "deployer",
+            "evidence": "Published examples with labels"
+          },
+          {
+            "id": "label_text",
+            "text": "AI-generated or manipulated text published to inform the public on matters of public interest is labelled, unless a named person has reviewed it and holds editorial responsibility.",
+            "guidance": "Decide per channel whether you label or apply human editorial review. Record the reviewer for each item you rely on the exemption for.",
+            "legal_basis": "Article 50(4)",
+            "role": "deployer",
+            "evidence": "Editorial policy; review log"
+          },
+          {
+            "id": "label_policy",
+            "text": "A written content policy explains who labels what, in which wording, and the exceptions used.",
+            "guidance": "One page is enough. Link it from the marketing and communications team handbook.",
+            "legal_basis": "Article 50(4); Code of Practice",
+            "role": "deployer",
+            "evidence": "Content policy, version and date"
+          }
+        ]
+      },
+      {
+        "id": "emotion",
+        "title": "5. Emotion recognition and biometric categorisation (Article 50(3))",
+        "items": [
+          {
+            "id": "emo_disclosure",
+            "text": "People exposed to an emotion recognition or biometric categorisation system are informed of its operation before exposure.",
+            "guidance": "Signage, on-screen notice or spoken notice, depending on the setting. Personal data processing must also comply with GDPR.",
+            "legal_basis": "Article 50(3); GDPR",
+            "role": "deployer",
+            "evidence": "Notice text and placement"
+          }
+        ]
+      },
+      {
+        "id": "governance",
+        "title": "6. Governance and evidence",
+        "items": [
+          {
+            "id": "gov_owner",
+            "text": "One named person owns Article 50 compliance and reviews this checklist at least every six months.",
+            "guidance": "The Commission guidelines and the Code of Practice will keep evolving; assign the regulatory watch.",
+            "legal_basis": "Good practice",
+            "role": "both",
+            "evidence": "Owner named in the AI governance policy"
+          },
+          {
+            "id": "gov_training",
+            "text": "Staff who operate chatbots or produce AI-generated content have completed the Article 50 Readiness Audit module.",
+            "guidance": "This also counts toward Article 4 literacy measures.",
+            "legal_basis": "Article 4; Article 50",
+            "role": "both",
+            "evidence": "Training completion records"
+          },
+          {
+            "id": "gov_records",
+            "text": "Screenshots, vendor statements, policies and test records for this checklist are stored where they can be produced within days of a request from a market surveillance authority.",
+            "guidance": "Authorities have had enforcement powers since 2 August 2026. Response time matters.",
+            "legal_basis": "Articles 74-79",
+            "role": "both",
+            "evidence": "Evidence folder index"
+          },
+          {
+            "id": "gov_prohibited",
+            "text": "No system in the inventory generates non-consensual intimate imagery or is capable of being used as a 'nudification' tool.",
+            "guidance": "Prohibited outright since the 2026 amendments. Check image-generation tools for safeguards.",
+            "legal_basis": "Article 5 as amended by Regulation (EU) 2026/1744",
+            "role": "both",
+            "evidence": "Inventory review note"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chk_article4_evidence",
+    "title": "Article 4 AI Literacy Evidence Pack",
+    "description": "The measures and records that show your organisation has taken the AI literacy measures Article 4 requires. Completing the items builds the evidence folder an authority, customer or auditor will ask for.",
+    "legal_basis": "Article 4 of Regulation (EU) 2024/1689 as amended by Regulation (EU) 2026/1744",
+    "audience": "every provider and deployer of AI systems",
+    "content_version": "2026.09",
+    "sections": [
+      {
+        "id": "policy",
+        "title": "1. Policy and ownership",
+        "items": [
+          {
+            "id": "pol_policy",
+            "text": "A short AI literacy policy states that the organisation takes measures to support the AI literacy of staff and others who use AI on its behalf.",
+            "guidance": "Mirror the amended Article 4 wording. One page. Approved by management.",
+            "legal_basis": "Article 4",
+            "role": "both",
+            "evidence": "Policy document, version and approval date"
+          },
+          {
+            "id": "pol_owner",
+            "text": "A named owner is responsible for the AI literacy programme and its records.",
+            "guidance": "Often the compliance, HR or IT lead in a small company.",
+            "legal_basis": "Article 4",
+            "role": "both",
+            "evidence": "Owner named in the policy"
+          }
+        ]
+      },
+      {
+        "id": "mapping",
+        "title": "2. Who needs what",
+        "items": [
+          {
+            "id": "map_roles",
+            "text": "Roles that operate or rely on AI systems are mapped to the training modules they must complete.",
+            "guidance": "Example: everyone completes the foundation modules; HR adds the HR module; developers add the developer module; marketing adds the customer-facing module.",
+            "legal_basis": "Article 4 (technical knowledge, experience, education, training and context of use)",
+            "role": "both",
+            "evidence": "Role-to-module matrix"
+          },
+          {
+            "id": "map_contractors",
+            "text": "Contractors and agency staff who use AI on the organisation's behalf are covered by the same mapping.",
+            "guidance": "Article 4 refers to 'other persons dealing with the operation and use of AI systems on their behalf'.",
+            "legal_basis": "Article 4",
+            "role": "both",
+            "evidence": "Contractor list with training status"
+          }
+        ]
+      },
+      {
+        "id": "delivery",
+        "title": "3. Delivery and records",
+        "items": [
+          {
+            "id": "del_completion",
+            "text": "Completion records exist for every person in scope: module, content version, score, date.",
+            "guidance": "The Article 4 evidence report exports this in one click.",
+            "legal_basis": "Article 4",
+            "role": "both",
+            "evidence": "Evidence report export"
+          },
+          {
+            "id": "del_certificates",
+            "text": "Certificates are issued for passed modules and stored with the personnel or compliance records.",
+            "guidance": "Not legally required, but the simplest artefact to show a customer or auditor.",
+            "legal_basis": "Good practice",
+            "role": "both",
+            "evidence": "Certificate archive"
+          },
+          {
+            "id": "del_onboarding",
+            "text": "New joiners complete the required modules within their first month.",
+            "guidance": "Add the modules to the onboarding checklist.",
+            "legal_basis": "Article 4",
+            "role": "both",
+            "evidence": "Onboarding checklist"
+          },
+          {
+            "id": "del_refresh",
+            "text": "Training is refreshed when the regulation or the tools change, and at least annually.",
+            "guidance": "The 2026 Regulatory Update module exists for exactly this purpose. Record the refresh date.",
+            "legal_basis": "Article 4",
+            "role": "both",
+            "evidence": "Refresh schedule and completion dates"
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "title": "4. Operating practices",
+        "items": [
+          {
+            "id": "ops_usage_rules",
+            "text": "Staff have written guidance on acceptable use of AI tools, including what data may be entered and when a human must check the output.",
+            "guidance": "Covers generative AI assistants as well as embedded features in business software.",
+            "legal_basis": "Article 4; Article 26 (for high-risk systems)",
+            "role": "both",
+            "evidence": "Acceptable-use guidance"
+          },
+          {
+            "id": "ops_escalation",
+            "text": "Staff know how to report AI behaviour that looks wrong, biased or unsafe, and reports are logged.",
+            "guidance": "A shared inbox or ticket category is enough for a small company.",
+            "legal_basis": "Article 4; Article 26(5)",
+            "role": "both",
+            "evidence": "Escalation route documented; log of reports"
+          },
+          {
+            "id": "ops_review",
+            "text": "Management reviews the AI literacy programme at least once a year and records the outcome.",
+            "guidance": "Include completion rates, gaps and the plan for the coming year.",
+            "legal_basis": "Good practice",
+            "role": "both",
+            "evidence": "Management review minutes"
+          }
+        ]
+      }
+    ]
+  }
+]

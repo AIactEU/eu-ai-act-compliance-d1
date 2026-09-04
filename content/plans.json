@@ -1,0 +1,357 @@
+[
+  {
+    "id": "free",
+    "name": "Free",
+    "kind": "free",
+    "position": 1,
+    "price_eur": 0,
+    "billing": "free",
+    "seats_included": 1,
+    "seat_min": null,
+    "term_months": null,
+    "training_tier": "free",
+    "stripe_price_env": null,
+    "tagline": "Start your AI literacy programme at no cost.",
+    "badge": null,
+    "cta": "Start free",
+    "highlights": [
+      "2 training modules: What Is the EU AI Act, and the 2026 Regulatory Update",
+      "Inventory up to 2 AI systems with the risk classification wizard",
+      "Article 4 evidence checklist (read-only)",
+      "Compliance calendar and regulatory update feed",
+      "English and Swedish"
+    ],
+    "entitlements": {
+      "ai_systems": 2,
+      "docs_per_month": 0,
+      "seats": 1,
+      "certificates": false,
+      "evidence_report": false,
+      "audit_trail": false,
+      "checklists": [],
+      "checklists_readonly": [
+        "chk_article4_evidence"
+      ],
+      "deadline_feed": true,
+      "api_access": false,
+      "priority_support": false
+    },
+    "is_active": true
+  },
+  {
+    "id": "team",
+    "name": "Team",
+    "kind": "subscription",
+    "position": 2,
+    "price_eur": 10,
+    "billing": "per_seat_monthly",
+    "seats_included": null,
+    "seat_min": 3,
+    "term_months": null,
+    "training_tier": "pro",
+    "stripe_price_env": "STRIPE_TEAM_PRICE_IDS",
+    "tagline": "Per-seat AI literacy with the proof auditors ask for.",
+    "badge": "Most popular",
+    "cta": "Start with 3 seats",
+    "highlights": [
+      "EUR 10 per seat per month, minimum 3 seats",
+      "Full training library: all 13 modules, role-based, quizzes and certificates",
+      "Article 4 evidence report: who completed what, when, on which content version",
+      "Article 50 transparency readiness checklist with progress tracking",
+      "Audit trail of every compliance action",
+      "Inventory up to 10 AI systems, 3 Annex IV document generations per month",
+      "Swedish versions of the foundation and Article 50 modules"
+    ],
+    "entitlements": {
+      "ai_systems": 10,
+      "docs_per_month": 3,
+      "seats": "quantity",
+      "certificates": true,
+      "evidence_report": true,
+      "audit_trail": true,
+      "checklists": [
+        "chk_article4_evidence",
+        "chk_article50_readiness"
+      ],
+      "checklists_readonly": [],
+      "deadline_feed": true,
+      "api_access": false,
+      "priority_support": false
+    },
+    "is_active": true
+  },
+  {
+    "id": "business",
+    "name": "Business",
+    "kind": "subscription",
+    "position": 3,
+    "price_eur": 149,
+    "billing": "monthly",
+    "seats_included": 25,
+    "seat_min": null,
+    "term_months": null,
+    "training_tier": "pro",
+    "stripe_price_env": "STRIPE_BUSINESS_PRICE_IDS",
+    "tagline": "Whole-company coverage plus the high-risk toolkit for 2027.",
+    "badge": null,
+    "cta": "Choose Business",
+    "highlights": [
+      "25 seats included",
+      "Everything in Team",
+      "Inventory up to 50 AI systems, 15 Annex IV document generations per month",
+      "Deadline feed API key and white-label calendar embed for your own site",
+      "Priority email support",
+      "Swedish versions of the foundation and Article 50 modules"
+    ],
+    "entitlements": {
+      "ai_systems": 50,
+      "docs_per_month": 15,
+      "seats": 25,
+      "certificates": true,
+      "evidence_report": true,
+      "audit_trail": true,
+      "checklists": [
+        "chk_article4_evidence",
+        "chk_article50_readiness"
+      ],
+      "checklists_readonly": [],
+      "deadline_feed": true,
+      "api_access": true,
+      "priority_support": true
+    },
+    "is_active": true
+  },
+  {
+    "id": "enterprise",
+    "name": "Enterprise",
+    "kind": "enterprise",
+    "position": 4,
+    "price_eur": null,
+    "billing": "custom",
+    "seats_included": null,
+    "seat_min": null,
+    "term_months": null,
+    "training_tier": "enterprise",
+    "stripe_price_env": "STRIPE_ENTERPRISE_PRICE_IDS",
+    "tagline": "Custom modules, unlimited scale, dedicated support.",
+    "badge": null,
+    "cta": "Contact us",
+    "highlights": [
+      "Unlimited seats, AI systems and document generation",
+      "Custom training modules in your own voice",
+      "Dedicated account manager",
+      "Custom integrations and single sign-on"
+    ],
+    "entitlements": {
+      "ai_systems": null,
+      "docs_per_month": null,
+      "seats": null,
+      "certificates": true,
+      "evidence_report": true,
+      "audit_trail": true,
+      "checklists": [
+        "chk_article4_evidence",
+        "chk_article50_readiness"
+      ],
+      "checklists_readonly": [],
+      "deadline_feed": true,
+      "api_access": true,
+      "priority_support": true
+    },
+    "is_active": true
+  },
+  {
+    "id": "pack_literacy",
+    "name": "AI Literacy Evidence Pack",
+    "kind": "pack",
+    "position": 5,
+    "price_eur": 490,
+    "billing": "one_time",
+    "seats_included": 25,
+    "seat_min": null,
+    "term_months": 12,
+    "training_tier": "pro",
+    "stripe_price_env": "STRIPE_PACK_LITERACY_PRICE_IDS",
+    "tagline": "Pay once. Train up to 25 people. Keep the proof.",
+    "badge": "Pay once",
+    "cta": "Buy the pack",
+    "highlights": [
+      "One payment, 12 months of access, no subscription",
+      "Up to 25 seats with the full 13-module library",
+      "Certificates and the Article 4 evidence report, exportable at any time",
+      "Article 4 evidence checklist with progress tracking",
+      "Inventory up to 5 AI systems",
+      "Swedish versions of the foundation and Article 50 modules"
+    ],
+    "entitlements": {
+      "ai_systems": 5,
+      "docs_per_month": 0,
+      "seats": 25,
+      "certificates": true,
+      "evidence_report": true,
+      "audit_trail": true,
+      "checklists": [
+        "chk_article4_evidence"
+      ],
+      "checklists_readonly": [
+        "chk_article50_readiness"
+      ],
+      "deadline_feed": true,
+      "api_access": false,
+      "priority_support": false
+    },
+    "is_active": true
+  },
+  {
+    "id": "pack_transparency",
+    "name": "Article 50 Readiness Pack",
+    "kind": "pack",
+    "position": 6,
+    "price_eur": 290,
+    "billing": "one_time",
+    "seats_included": 5,
+    "seat_min": null,
+    "term_months": 12,
+    "training_tier": "starter",
+    "stripe_price_env": "STRIPE_PACK_TRANSPARENCY_PRICE_IDS",
+    "tagline": "Get chatbots and generated content compliant with the rules in force since August 2026.",
+    "badge": "Pay once",
+    "cta": "Buy the pack",
+    "highlights": [
+      "One payment, 12 months of access",
+      "Article 50 readiness checklist with progress tracking and disclosure wording",
+      "Article 50 Readiness Audit module plus the foundation modules, for 5 seats",
+      "Inventory up to 10 AI systems, flagging every system that interacts with people or generates content",
+      "Legacy-system grace period tracker for the 2 December 2026 marking deadline",
+      "English and Swedish"
+    ],
+    "entitlements": {
+      "ai_systems": 10,
+      "docs_per_month": 0,
+      "seats": 5,
+      "certificates": true,
+      "evidence_report": false,
+      "audit_trail": true,
+      "checklists": [
+        "chk_article50_readiness"
+      ],
+      "checklists_readonly": [
+        "chk_article4_evidence"
+      ],
+      "deadline_feed": true,
+      "api_access": false,
+      "priority_support": false
+    },
+    "is_active": true
+  },
+  {
+    "id": "pack_bundle",
+    "name": "Compliance Starter Bundle",
+    "kind": "pack",
+    "position": 7,
+    "price_eur": 690,
+    "billing": "one_time",
+    "seats_included": 25,
+    "seat_min": null,
+    "term_months": 12,
+    "training_tier": "pro",
+    "stripe_price_env": "STRIPE_PACK_BUNDLE_PRICE_IDS",
+    "tagline": "Both packs, one payment, everything a small company needs this year.",
+    "badge": "Best value",
+    "cta": "Buy the bundle",
+    "highlights": [
+      "AI Literacy Evidence Pack and Article 50 Readiness Pack together, saving EUR 90",
+      "25 seats, full library, certificates and evidence report",
+      "Both checklists with progress tracking",
+      "Inventory up to 10 AI systems, 2 Annex IV document generations per month",
+      "12 months of access, no subscription",
+      "Swedish versions of the foundation and Article 50 modules"
+    ],
+    "entitlements": {
+      "ai_systems": 10,
+      "docs_per_month": 2,
+      "seats": 25,
+      "certificates": true,
+      "evidence_report": true,
+      "audit_trail": true,
+      "checklists": [
+        "chk_article4_evidence",
+        "chk_article50_readiness"
+      ],
+      "checklists_readonly": [],
+      "deadline_feed": true,
+      "api_access": false,
+      "priority_support": false
+    },
+    "is_active": true
+  },
+  {
+    "id": "legacy_starter",
+    "name": "Starter (legacy)",
+    "kind": "subscription",
+    "position": 90,
+    "price_eur": 49,
+    "billing": "monthly",
+    "seats_included": 1,
+    "seat_min": null,
+    "term_months": null,
+    "training_tier": "starter",
+    "stripe_price_env": "STRIPE_STARTER_PRICE_IDS",
+    "tagline": "Grandfathered plan for subscribers before September 2026.",
+    "badge": null,
+    "cta": null,
+    "highlights": [],
+    "entitlements": {
+      "ai_systems": 5,
+      "docs_per_month": 2,
+      "seats": 1,
+      "certificates": true,
+      "evidence_report": false,
+      "audit_trail": false,
+      "checklists": [
+        "chk_article4_evidence"
+      ],
+      "checklists_readonly": [
+        "chk_article50_readiness"
+      ],
+      "deadline_feed": true,
+      "api_access": false,
+      "priority_support": false
+    },
+    "is_active": false
+  },
+  {
+    "id": "legacy_pro",
+    "name": "Pro (legacy)",
+    "kind": "subscription",
+    "position": 91,
+    "price_eur": 129,
+    "billing": "monthly",
+    "seats_included": 5,
+    "seat_min": null,
+    "term_months": null,
+    "training_tier": "pro",
+    "stripe_price_env": "STRIPE_PRO_PRICE_IDS",
+    "tagline": "Grandfathered plan for subscribers before September 2026.",
+    "badge": null,
+    "cta": null,
+    "highlights": [],
+    "entitlements": {
+      "ai_systems": 25,
+      "docs_per_month": 15,
+      "seats": 5,
+      "certificates": true,
+      "evidence_report": true,
+      "audit_trail": true,
+      "checklists": [
+        "chk_article4_evidence",
+        "chk_article50_readiness"
+      ],
+      "checklists_readonly": [],
+      "deadline_feed": true,
+      "api_access": false,
+      "priority_support": true
+    },
+    "is_active": false
+  }
+]

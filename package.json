@@ -1,6 +1,6 @@
 {
 	"name": "eu-ai-act-compliance-d1",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"private": true,
 	"scripts": {
 		"dev": "wrangler dev --var API_SECRET:dev-secret",
@@ -10,8 +10,9 @@
 		"content:build": "node scripts/generate-seed.mjs",
 		"db:migrate:local": "wrangler d1 migrations apply DB --local",
 		"db:migrate:remote": "wrangler d1 migrations apply DB --remote",
-		"db:seed:local": "wrangler d1 execute DB --local --file=migrations/0002_seed_content.sql",
-		"db:seed:remote": "wrangler d1 execute DB --remote --file=migrations/0002_seed_content.sql",
+		"db:seed:local": "wrangler d1 execute DB --local --file=seeds/content.sql",
+		"db:seed:remote": "wrangler d1 execute DB --remote --file=seeds/content.sql",
+		"db:setup:local": "npm run content:build && npm run db:migrate:local && npm run db:seed:local",
 		"test:smoke": "node scripts/smoke-test.mjs",
 		"cf-typegen": "wrangler types"
 	},

@@ -1,0 +1,372 @@
+{
+  "locale": "sv",
+  "modules": {
+    "mod_foundation_01": {
+      "title": "Vad är EU:s AI-förordning?",
+      "description": "Förstå världens första heltäckande AI-reglering: varför den finns, vem den gäller och de viktigaste tidsfristerna efter 2026 års omnibusändringar.",
+      "content": {
+        "sections": [
+          {
+            "title": "Varför EU reglerar AI",
+            "body": "EU:s AI-förordning (förordning (EU) 2024/1689) trädde i kraft den 1 augusti 2024. Den är världens första heltäckande rättsliga ram för artificiell intelligens och ska säkerställa att AI-system som används i EU är säkra, transparenta och respekterar grundläggande rättigheter.\n\nFörordningen gäller alla organisationer som utvecklar, tillhandahåller eller använder AI-system vars utdata påverkar personer i EU, oavsett var organisationen är etablerad. Den extraterritoriella räckvidden innebär att även företag utanför Europa måste följa reglerna om deras AI-system når EU-medborgare.\n\nUnder 2026 ändrades förordningen genom det digitala omnibuspaketet för AI (förordning (EU) 2026/1744), som trädde i kraft den 27 juli 2026. Omnibusen flyttade flera tidsfrister och förenklade vissa skyldigheter, men ändrade inte förordningens grundstruktur eller dess krav. Den här modulen speglar den ändrade texten."
+          },
+          {
+            "title": "Den riskbaserade modellen",
+            "body": "AI-förordningen delar in AI-system i fyra risknivåer:\n\n• Oacceptabel risk: helt förbjudet. Omfattar social poängsättning, subliminal eller exploaterande manipulation, känsloigenkänning på arbetsplatser och i skolor, oriktad skrapning av ansiktsbilder, de flesta former av biometrisk fjärridentifiering i realtid på allmän plats samt, sedan 2026 års ändringar, AI som är utformad för att skapa intima bilder utan samtycke eller material med sexuella övergrepp mot barn.\n\n• Hög risk: strikta krav på riskhantering, datastyrning, teknisk dokumentation, mänsklig tillsyn och bedömning av överensstämmelse. Listas i bilaga III (fristående användningsområden) och bilaga I (AI i reglerade produkter).\n\n• Begränsad risk: transparensskyldigheter gäller. Människor ska få veta att de interagerar med AI, och AI-genererat innehåll ska märkas och i vissa fall etiketteras.\n\n• Minimal risk: inga särskilda skyldigheter, men frivilliga uppförandekoder uppmuntras.\n\nDessutom har AI-modeller med allmänt ändamål, till exempel stora språkmodeller, egna skyldigheter enligt kapitel V, oavsett risknivån hos de system som byggs ovanpå dem."
+          },
+          {
+            "title": "Viktiga tidsfrister (ändrade 2026)",
+            "body": "Förordningen fasas in under flera år. Den aktuella kalendern är:\n\n• 2 februari 2025: förbjudna AI-metoder förbjuds; skyldigheten om AI-kunnighet (artikel 4) börjar gälla.\n\n• 2 augusti 2025: skyldigheter för AI-modeller med allmänt ändamål börjar gälla; nationella myndigheter utses; sanktionsramen är på plats.\n\n• 2 augusti 2026: transparensskyldigheterna i artikel 50 börjar gälla (upplysning om chattbotar, maskinläsbar märkning av AI-genererat innehåll, etikettering av deepfakes). AI-byråns och de nationella myndigheternas tillsynsbefogenheter börjar gälla, inklusive kommissionens sanktionsavgifter mot leverantörer av AI-modeller med allmänt ändamål.\n\n• 2 december 2026: slutet på övergångsperioden för generativa AI-system som redan fanns på marknaden före den 2 augusti 2026 att införa maskinläsbar märkning.\n\n• Senast 2 december 2027: skyldigheter för fristående högrisk-AI-system (bilaga III). De kan börja gälla tidigare: sex månader efter att kommissionen bekräftat att harmoniserade standarder och vägledning finns tillgängliga.\n\n• Senast 2 augusti 2028: skyldigheter för högrisk-AI inbyggd i reglerade produkter (bilaga I); tolv månader efter samma kommissionsbeslut.\n\nÖverträdelser kan leda till sanktionsavgifter på upp till 35 miljoner euro eller 7 % av den globala årsomsättningen för förbjudna metoder, och upp till 15 miljoner euro eller 3 % för de flesta andra skyldigheter. Små och medelstora företag och, sedan 2026, små midcap-företag betalar det lägre av de två beloppen."
+          },
+          {
+            "title": "Vad AI-kunnighet betyder för dig",
+            "body": "Artikel 4 kräver att leverantörer och tillhandahållare vidtar åtgärder för att stödja en tillräcklig nivå av AI-kunnighet hos sin personal och andra personer som använder AI-system för deras räkning. 2026 års ändringar förtydligade att organisationer inte behöver garantera en viss kunskapsnivå hos någon enskild person, och att kommissionen och medlemsstaterna ska stödja arbetet, bland annat genom att publicera praktiska exempel på hur skyldigheten kan uppfyllas.\n\nDen praktiska förväntan är oförändrad: alla som arbetar med AI-utdata behöver förstå vad systemet kan och inte kan, hur resultaten ska tolkas, när mänsklig tillsyn behövs och vilket ansvar de har enligt förordningen. Det gäller inte bara utvecklare. Det omfattar chefer, kundtjänst, HR och alla som fattar beslut baserade på AI-utdata.\n\nAtt genomföra den här utbildningen, och spara ett intyg på det, är ett konkret sätt att visa att organisationen har vidtagit de åtgärder artikel 4 kräver."
+          }
+        ],
+        "quiz": [
+          {
+            "question": "När började skyldigheten om AI-kunnighet enligt artikel 4 att gälla?",
+            "options": ["1 augusti 2024", "2 februari 2025", "2 augusti 2026", "2 december 2027"],
+            "correct": 1,
+            "explanation": "Skyldigheten om AI-kunnighet och förbuden mot vissa AI-metoder började gälla den 2 februari 2025. 2026 års ändringar mjukade upp ordalydelsen i artikel 4 men ändrade inte datumet."
+          },
+          {
+            "question": "Vilken risknivå innebär att AI-system förbjuds?",
+            "options": ["Hög risk", "Begränsad risk", "Oacceptabel risk", "Minimal risk"],
+            "correct": 2,
+            "explanation": "AI-metoder med oacceptabel risk är förbjudna enligt artikel 5 i AI-förordningen."
+          },
+          {
+            "question": "Gäller AI-förordningen företag som är etablerade utanför EU?",
+            "options": ["Nej, bara EU-baserade företag", "Ja, om deras AI-utdata påverkar personer i EU", "Bara om de har ett kontor i EU", "Bara för högrisksystem"],
+            "correct": 1,
+            "explanation": "Förordningen har extraterritoriell räckvidd. Den gäller alla leverantörer och tillhandahållare vars AI-systems utdata används i EU."
+          },
+          {
+            "question": "Enligt 2026 års ändringar, vilket är det senaste datumet då skyldigheterna för fristående högrisksystem (bilaga III) börjar gälla?",
+            "options": ["2 augusti 2026", "2 december 2026", "2 december 2027", "2 augusti 2028"],
+            "correct": 2,
+            "explanation": "Omnibusen sköt upp skyldigheterna för bilaga III till sex månader efter ett kommissionsbeslut om att standarder finns tillgängliga, med ett absolut slutdatum den 2 december 2027. Inbyggda system enligt bilaga I har slutdatum den 2 augusti 2028."
+          },
+          {
+            "question": "Vad är den högsta sanktionsavgiften för förbjudna AI-metoder?",
+            "options": ["7,5 miljoner euro eller 1 %", "15 miljoner euro eller 3 %", "35 miljoner euro eller 7 %", "50 miljoner euro eller 10 %"],
+            "correct": 2,
+            "explanation": "Förbjudna metoder kan ge sanktionsavgifter på upp till 35 miljoner euro eller 7 % av den globala årsomsättningen, beroende på vilket som är högst."
+          }
+        ]
+      }
+    },
+    "mod_update_2026": {
+      "title": "Regelnytt: 2026 års digitala omnibus",
+      "description": "Vad som ändrades när förordning (EU) 2026/1744 ändrade AI-förordningen, vad som ändå började gälla den 2 augusti 2026, och vad din organisation bör göra nu. Med en särskild not om Sverige.",
+      "content": {
+        "sections": [
+          {
+            "title": "Vad den digitala omnibusen är",
+            "body": "Det digitala omnibuspaketet för AI är ett paket med riktade ändringar av AI-förordningen. Kommissionen föreslog det den 19 november 2025 eftersom de harmoniserade standarder, gemensamma specifikationer och den vägledning som företag behöver för att uppfylla högriskreglerna var försenade.\n\nTidslinjen:\n\n• 7 maj 2026: rådet och parlamentet når en preliminär politisk överenskommelse.\n• 16 juni 2026: parlamentets plenum godkänner texten (423 för, 57 emot, 174 nedlagda).\n• 29 juni 2026: rådet ger sitt slutliga godkännande.\n• 24 juli 2026: offentliggörs i EU:s officiella tidning som förordning (EU) 2026/1744.\n• 27 juli 2026: ikraftträdande, tre dagar efter offentliggörandet på grund av närheten till det ursprungliga datumet 2 augusti 2026.\n\nÄndringarna är nu en del av AI-förordningen. När den här utbildningen hänvisar till 'förordningen' avses den ändrade texten."
+          },
+          {
+            "title": "Den nya tidslinjen för högrisk",
+            "body": "Den viktigaste ändringen är en 'stoppa klockan'-mekanism för högrisk-AI-system.\n\n• Fristående högrisksystem (bilaga III): skyldigheterna börjar gälla sex månader efter att kommissionen antagit ett beslut som bekräftar att harmoniserade standarder, gemensamma specifikationer och stödjande vägledning finns tillgängliga, och under alla omständigheter senast den 2 december 2027.\n\n• Högrisk-AI inbyggd i reglerade produkter (bilaga I): skyldigheterna börjar gälla tolv månader efter det beslutet, och senast den 2 augusti 2028.\n\nVad som inte ändrades: innehållet i högriskkraven. Riskhantering (artikel 9), datastyrning (artikel 10), teknisk dokumentation (artikel 11), loggning (artikel 12), transparens gentemot tillhandahållare (artikel 13), mänsklig tillsyn (artikel 14), noggrannhet, robusthet och cybersäkerhet (artikel 15), kvalitetsledningssystem (artikel 17), tillhandahållarnas skyldigheter (artikel 26) och bedömning av överensstämmelse (artikel 43) gäller fortfarande. Tidsfristerna flyttades. Kraven gjorde det inte.\n\nEftersom kommissionens beslut kan komma långt före slutdatumen kan den faktiska tidsfristen för ett fristående system infalla redan i mitten av 2027. Se den 2 december 2027 som det sista möjliga datumet, inte som planeringsdatumet."
+          },
+          {
+            "title": "Vad som ändå började gälla den 2 augusti 2026",
+            "body": "Flera skyldigheter behöll sitt ursprungliga datum:\n\n• Transparensskyldigheterna i artikel 50 gäller. Människor ska få veta när de interagerar med ett AI-system; leverantörer av generativ AI ska märka utdata maskinläsbart; tillhandahållare ska etikettera deepfakes och AI-genererad text som publiceras för att informera allmänheten i frågor av allmänt intresse; känsloigenkänning och biometrisk kategorisering ska upplysas om.\n\n• AI-byråns och de nationella marknadskontrollmyndigheternas tillsynsbefogenheter gäller.\n\n• Kommissionen kan nu ålägga leverantörer av AI-modeller med allmänt ändamål sanktionsavgifter på upp till 15 miljoner euro eller 3 % av den globala omsättningen, även för överträdelser sedan den 2 augusti 2025.\n\nEn eftergift gjordes för transparens: generativa AI-system som släppts ut på marknaden eller tagits i bruk före den 2 augusti 2026 har fram till den 2 december 2026 på sig att införa maskinläsbar märkning (artikel 50.2). System som släpps ut på marknaden från den 2 augusti 2026 måste uppfylla kravet direkt.\n\nI juli 2026 bekräftade kommissionen uppförandekoden för märkning och etikettering av AI-genererat innehåll som ett lämpligt sätt att uppfylla kraven och publicerade sina slutliga riktlinjer om artikel 50."
+          },
+          {
+            "title": "Andra ändringar du bör känna till",
+            "body": "• AI-kunnighet (artikel 4): leverantörer och tillhandahållare ska vidta åtgärder för att stödja personalens AI-kunnighet. De behöver inte garantera en viss nivå. Kommissionen och medlemsstaterna kommer att publicera praktiska exempel.\n\n• Nytt förbud (artikel 5): AI-metoder som syftar till att skapa sexuella eller intima bilder utan samtycke, eller material med sexuella övergrepp mot barn, är förbjudna. Så kallade 'avklädningsverktyg' faller rakt in under detta.\n\n• Självbedömning enligt artikel 6.3: kommissionen hade föreslagit att slopa registreringen i EU-databasen för system som leverantören själv bedömer inte vara högrisk. Lagstiftarna behöll registreringen, i förenklad form. Dokumentera bedömningen och registrera.\n\n• Små midcap-företag: förenklingarna för små och medelstora företag (förenklad teknisk dokumentation, förtur till regulatoriska sandlådor, lägre sanktionstak) omfattar nu även små midcap-företag.\n\n• Data för bias-detektering (artikel 10.5): den rättsliga grunden för att behandla särskilda kategorier av personuppgifter för att upptäcka och korrigera bias omfattar nu leverantörer och tillhandahållare av alla AI-system, under ett strikt nödvändighetskrav och med skyddsåtgärder.\n\n• Centraliserad tillsyn: AI-byrån har exklusiv tillsynsbehörighet över AI-system som bygger på en AI-modell med allmänt ändamål som utvecklats av samma leverantör eller koncern, och över AI-system integrerade i mycket stora onlineplattformar och sökmotorer enligt förordningen om digitala tjänster."
+          },
+          {
+            "title": "Särskilt om Sverige",
+            "body": "Integritetsskyddsmyndigheten (IMY) väntas få en samordnande roll som nationell behörig myndighet för AI-förordningen i Sverige, med sektorsmyndigheter som Finansinspektionen på sina respektive områden. Håll utkik efter IMY:s vägledning och efter riksdagens kompletterande bestämmelser till AI-förordningen.\n\nAI Sweden har tillsammans med Almi, IMY och PwC tagit fram kostnadsfritt introduktionsmaterial ('AI Act Ready'). Det är en bra grund, men det ger inga individuella genomförandeintyg. Den här plattformens moduler, quiz och intyg är utformade för att ge just den dokumentation som artikel 4 i sin ändrade lydelse efterfrågar.\n\nDataskyddsförordningen (GDPR) gäller parallellt. IMY är tillsynsmyndighet även där, så räkna med att ett ärende om AI kan beröra båda regelverken."
+          },
+          {
+            "title": "Vad du bör göra nu",
+            "body": "1. Pausa inte högriskförberedelserna. Inventering, riskklassificering, dokumentation enligt bilaga IV och kvalitetsledning tar längre tid än den tid som återstår, och kommissionens beslut kan starta sexmånadersfristen före slutdatumet.\n\n2. Granska varje kundnära eller innehållsskapande AI-system mot artikel 50. De reglerna gäller nu. Om ett äldre generativt system ännu inte märker sin utdata måste det göra det senast den 2 december 2026.\n\n3. Fortsätt med utbildning i AI-kunnighet och spara genomförandedata. Den åtgärdsbaserade lydelsen i artikel 4 gör dokumenterad utbildning till det enklaste beviset.\n\n4. Bevaka kommissionens beslut om standardernas tillgänglighet och när EN 18286 och dess följdstandarder hänvisas till i EU:s officiella tidning.\n\n5. Om ni är ett litet eller medelstort företag eller ett litet midcap-företag: använd den förenklade dokumentationsmallen och sandlådorna, men kom ihåg att kraven är desamma."
+          }
+        ],
+        "quiz": [
+          {
+            "question": "När trädde det digitala omnibuspaketet för AI i kraft?",
+            "options": ["2 augusti 2026", "27 juli 2026", "7 maj 2026", "1 januari 2027"],
+            "correct": 1,
+            "explanation": "Förordning (EU) 2026/1744 offentliggjordes i EU:s officiella tidning den 24 juli 2026 och trädde i kraft tre dagar senare, den 27 juli 2026."
+          },
+          {
+            "question": "Vad innebär uppskjutandet av högriskskyldigheterna i praktiken?",
+            "options": ["Högriskkraven togs bort", "Tidsfristerna flyttades; kraven är oförändrade", "Bara små och medelstora företag måste följa dem", "Bilaga III ströks"],
+            "correct": 1,
+            "explanation": "Omnibusen ändrade tillämpningsdatumen och kopplade dem till ett kommissionsbeslut om standarder. De materiella kraven i artiklarna 9 till 17, 26 och 43 är oförändrade."
+          },
+          {
+            "question": "Vilken skyldighet började gälla den 2 augusti 2026 enligt ursprunglig plan?",
+            "options": ["Högriskskyldigheterna enligt bilaga III", "Transparensskyldigheterna i artikel 50", "Skyldigheterna för inbyggd högrisk-AI enligt bilaga I", "Ingen; allt sköts upp"],
+            "correct": 1,
+            "explanation": "Transparensskyldigheterna i artikel 50 och tillsynsbefogenheterna för AI-byrån och nationella myndigheter började gälla den 2 augusti 2026. Endast högriskskyldigheterna sköts upp."
+          },
+          {
+            "question": "När måste generativa AI-system som redan fanns på marknaden före den 2 augusti 2026 senast ha infört maskinläsbar märkning?",
+            "options": ["2 december 2026", "2 februari 2027", "2 december 2027", "2 augusti 2028"],
+            "correct": 0,
+            "explanation": "Omnibusen gav äldre generativa system en övergångsperiod på fyra månader för märkning enligt artikel 50.2, som löper ut den 2 december 2026."
+          }
+        ]
+      }
+    },
+    "mod_foundation_02": {
+      "title": "Förstå AI-system",
+      "description": "Lär dig vad som räknas som ett 'AI-system' enligt förordningen, vilka vanliga AI-tekniker din organisation redan kan använda, och hur du identifierar dem.",
+      "content": {
+        "sections": [
+          {
+            "title": "Den rättsliga definitionen av ett AI-system",
+            "body": "Enligt AI-förordningen är ett 'AI-system' ett maskinbaserat system som är utformat för att fungera med varierande grad av autonomi, som kan uppvisa anpassningsförmåga efter införandet och som, utifrån indata, härleder hur det ska generera utdata såsom förutsägelser, innehåll, rekommendationer eller beslut som kan påverka fysiska eller virtuella miljöer.\n\nDefinitionen är medvetet bred. Den omfattar inte bara avancerade djupinlärningsmodeller utan även traditionell maskininlärning, regelbaserade system med adaptiva komponenter och många vanliga affärsverktyg. Kommissionens riktlinjer om definitionen (februari 2025) bekräftar att enkla system med fasta, människodefinierade regler och utan inferens faller utanför, men att de flesta program som lär sig av data faller innanför."
+          },
+          {
+            "title": "Vanliga AI-system i företag",
+            "body": "Din organisation använder sannolikt redan AI på sätt du kanske inte känner igen:\n\n• Generativa AI-assistenter och chattverktyg (ChatGPT, Claude, Gemini, Copilot). Dessa är AI-system byggda på AI-modeller med allmänt ändamål.\n• Kundtjänstchattbotar och röstbotar\n• Skräppostfilter och verktyg för innehållsmoderering\n• Rekommendationsmotorer (produktförslag, innehållsurval)\n• HR-verktyg för urval (CV-tolkning, rangordning av kandidater)\n• Prediktiv analys (försäljningsprognoser, efterfrågeplanering, kredit- eller bedrägeribedömning)\n• Bildigenkänning (kvalitetskontroll, dokumenthantering)\n• Översättning, transkribering och sammanfattning\n• Kodassistenter\n\nFörsta steget i efterlevnadsarbetet är att identifiera alla AI-system som används, inklusive AI-funktioner inbyggda i SaaS-produkter ni redan betalar för."
+          },
+          {
+            "title": "Leverantörens och tillhandahållarens ansvar",
+            "body": "Förordningen skiljer mellan två nyckelroller:\n\nLeverantör: den som utvecklar ett AI-system, eller låter utveckla det, och släpper ut det på marknaden eller tar det i bruk under eget namn eller varumärke. Leverantörer bär de tyngsta skyldigheterna: riskhantering, dokumentation, bedömning av överensstämmelse och maskinläsbar märkning av generativ utdata.\n\nTillhandahållare: den som använder ett AI-system under eget ansvar i yrkesmässig verksamhet (men inte utvecklade det). Tillhandahållare ska använda systemet enligt bruksanvisningen, upprätthålla mänsklig tillsyn, övervaka driften, upplysa människor om att de interagerar med AI, etikettera deepfakes och viss AI-genererad text, och samarbeta med myndigheterna.\n\nViktigt: om du sätter ditt namn på ett tredjepartssystem, väsentligt ändrar det eller ändrar dess avsedda ändamål kan du bli 'leverantör' enligt artikel 25 och överta alla leverantörsskyldigheter."
+          }
+        ],
+        "quiz": [
+          {
+            "question": "Vilket av följande är sannolikt ett AI-system enligt förordningen?",
+            "options": ["En statisk FAQ-sida", "En kalkylbladsformel", "En kundchattbot byggd på en stor språkmodell", "En tryckt manual"],
+            "correct": 2,
+            "explanation": "En chattbot som drivs av en stor språkmodell uppfyller definitionen: den är maskinbaserad, fungerar med autonomi och härleder utdata som påverkar interaktioner."
+          },
+          {
+            "question": "Vad händer om du väsentligt ändrar ett tredjeparts-AI-system?",
+            "options": ["Inget ändras; den ursprungliga leverantören är fortfarande ansvarig", "Du kan bli 'leverantör' och överta leverantörsskyldigheterna", "Systemet förbjuds automatiskt", "Du behöver bara meddela den ursprungliga leverantören"],
+            "correct": 1,
+            "explanation": "Enligt artikel 25 gör väsentliga ändringar som påverkar efterlevnaden eller ändrar det avsedda ändamålet att den som ändrar blir ny leverantör."
+          },
+          {
+            "question": "Vad är första steget mot efterlevnad av AI-förordningen?",
+            "options": ["Anställa en compliance-ansvarig", "Identifiera alla AI-system organisationen använder", "Registrera sig hos EU:s AI-byrå", "Ansöka om CE-märkning"],
+            "correct": 1,
+            "explanation": "Du kan inte bedöma risker eller uppfylla skyldigheter om du inte vet vilka AI-system organisationen använder. Inventering är steg ett."
+          }
+        ]
+      }
+    },
+    "mod_foundation_03": {
+      "title": "Dina skyldigheter och ditt ansvar",
+      "description": "Vad AI-förordningen kräver av din organisation i dag, vad som kommer enligt den ändrade högrisktidslinjen, och din personliga roll i att upprätthålla efterlevnaden.",
+      "content": {
+        "sections": [
+          {
+            "title": "AI-kunnighet (artikel 4): gäller sedan februari 2025",
+            "body": "Leverantörer och tillhandahållare ska vidta åtgärder för att stödja en tillräcklig nivå av AI-kunnighet hos personal och andra personer som använder AI-system för deras räkning, med hänsyn till deras tekniska kunskaper, erfarenhet, utbildning och det sammanhang AI:n används i.\n\nSedan 2026 års ändringar är skyldigheten formulerad som att vidta åtgärder, inte att garantera ett resultat. I praktiken betyder AI-kunnighet att alla som arbetar med AI:\n\n• Förstår vad AI-systemet gör och dess begränsningar\n• Vet när AI-utdata kan litas på och när eget omdöme krävs\n• Är medvetna om möjliga fel och snedvridningar\n• Förstår sin roll i den mänskliga tillsynen\n• Vet hur man eskalerar oro över AI:ns beteende\n\nDet gäller oavsett roll, från vd till kundnära personal. Spara uppgifter om vem som slutfört vilken utbildning och när."
+          },
+          {
+            "title": "Transparensskyldigheter (artikel 50): gäller sedan 2 augusti 2026",
+            "body": "Om din organisation tillhandahåller eller levererar AI-system som interagerar med människor eller skapar innehåll måste ni:\n\n• Upplysa människor om att de interagerar med ett AI-system, om det inte är uppenbart av sammanhanget (artikel 50.1)\n• Som leverantör av generativ AI märka utdata (text, bild, ljud, video) i ett maskinläsbart format så att den kan upptäckas som artificiellt skapad (artikel 50.2)\n• Upplysa personer som utsätts för känsloigenkänning eller biometrisk kategorisering om att systemet används (artikel 50.3)\n• Som tillhandahållare etikettera deepfakes, och etikettera AI-genererad eller manipulerad text som publiceras för att informera allmänheten i frågor av allmänt intresse, om texten inte granskats redaktionellt av en människa (artikel 50.4)\n\nSkyldigheterna gäller alla AI-system som omfattas, inte bara högrisksystem. Generativa system som redan fanns på marknaden före den 2 augusti 2026 har fram till den 2 december 2026 på sig att införa maskinläsbar märkning. Kommissionens uppförandekod för märkning och etikettering av AI-genererat innehåll och dess riktlinjer om artikel 50 (juli 2026) beskriver godtagna metoder."
+          },
+          {
+            "title": "Krav på högrisksystem: senast december 2027 / augusti 2028",
+            "body": "Om din organisation levererar eller tillhandahåller högrisk-AI-system gäller följande krav från sex månader (bilaga III) eller tolv månader (bilaga I) efter att kommissionen bekräftat att standarder finns tillgängliga, och senast den 2 december 2027 respektive den 2 augusti 2028:\n\n• Riskhanteringssystem (artikel 9)\n• Datastyrning och kvalitetskontroller (artikel 10)\n• Teknisk dokumentation enligt bilaga IV (artikel 11)\n• Loggning och dokumentation (artikel 12)\n• Transparens och bruksanvisning för tillhandahållare (artikel 13)\n• Möjlighet till mänsklig tillsyn (artikel 14)\n• Noggrannhet, robusthet och cybersäkerhet (artikel 15)\n• Kvalitetsledningssystem (artikel 17)\n• Tillhandahållarens skyldigheter: användning enligt anvisning, tillsyn, övervakning, information till arbetstagare och berörda personer (artikel 26)\n• Bedömning av överensstämmelse före utsläppande på marknaden (artikel 43)\n• Registrering i EU-databasen (artikel 49)\n• Övervakning efter utsläppande på marknaden (artikel 72)\n\nUppskovet minskar inte arbetet. Det ger tid att göra det ordentligt."
+          },
+          {
+            "title": "Rapportering av allvarliga incidenter (artikel 73)",
+            "body": "Leverantörer av högrisk-AI-system ska rapportera allvarliga incidenter till marknadskontrollmyndigheten i den medlemsstat där incidenten inträffade. En 'allvarlig incident' är en incident som direkt eller indirekt leder till:\n\n• Dödsfall eller allvarlig skada på en persons hälsa\n• Allvarlig och oåterkallelig störning av kritisk infrastruktur\n• Överträdelse av skyldigheter enligt unionsrätten som skyddar grundläggande rättigheter\n• Allvarlig skada på egendom eller miljön\n\nRapporten ska lämnas omedelbart efter att ett orsakssamband (eller en rimlig sannolikhet för ett sådant) fastställts och under alla omständigheter senast 15 dagar efter att leverantören fått kännedom om incidenten. Kortare frister gäller: 2 dagar vid utbredd överträdelse eller allvarlig och oåterkallelig störning av kritisk infrastruktur, och 10 dagar vid dödsfall. Tillhandahållare ska utan onödigt dröjsmål informera leverantören (och vid behov myndigheterna) när de upptäcker en allvarlig incident."
+          }
+        ],
+        "quiz": [
+          {
+            "question": "Vilka i din organisation behöver utbildning i AI-kunnighet?",
+            "options": ["Bara IT-avdelningen", "Bara chefer och ledning", "Alla som använder AI-system för organisationens räkning", "Bara den compliance-ansvarige"],
+            "correct": 2,
+            "explanation": "Artikel 4 kräver åtgärder som stödjer AI-kunnighet hos all personal som använder AI-system, oavsett roll."
+          },
+          {
+            "question": "Vilken är den allmänna tidsfristen för en leverantör att rapportera en allvarlig incident enligt artikel 73?",
+            "options": ["Inom 24 timmar", "Inom 72 timmar", "Omedelbart, och senast 15 dagar efter kännedom", "Vid nästa årliga genomgång"],
+            "correct": 2,
+            "explanation": "Artikel 73 sätter en allmän gräns på 15 dagar från kännedom, förkortad till 2 dagar vid utbredda överträdelser eller störning av kritisk infrastruktur och 10 dagar vid dödsfall."
+          },
+          {
+            "question": "Gäller transparensskyldigheterna i artikel 50 bara högrisk-AI-system?",
+            "options": ["Ja, bara högrisk", "Nej, de gäller alla AI-system som interagerar med människor eller skapar innehåll", "Bara förbjudna system", "Bara AI-modeller med allmänt ändamål"],
+            "correct": 1,
+            "explanation": "Artikel 50 gäller oavsett risknivå, och den har gällt sedan den 2 augusti 2026."
+          }
+        ]
+      }
+    },
+    "mod_article50_readiness": {
+      "title": "Artikel 50: beredskapsgenomgång",
+      "description": "En praktisk, rolloberoende genomgång av de transparensskyldigheter som gäller sedan den 2 augusti 2026: hitta systemen som omfattas, åtgärda upplysningarna, verifiera märkningen, etikettera innehåll och spara bevisen.",
+      "content": {
+        "sections": [
+          {
+            "title": "Varför artikel 50 är skyldigheten att åtgärda först",
+            "body": "De flesta av AI-förordningens tunga krav sköts upp genom 2026 års digitala omnibus. Artikel 50 gjorde det inte. Sedan den 2 augusti 2026 gäller transparensskyldigheterna varje organisation vars AI-system pratar med människor eller skapar innehåll, och marknadskontrollmyndigheterna har haft sina tillsynsbefogenheter sedan samma dag.\n\nDet gör artikel 50 till den skyldighet de flesta små och medelstora företag faktiskt kommer att få frågor om först. Den är också billigast att få rätt: det handlar om upplysning, etikettering och bevis, inte om bedömning av överensstämmelse eller anmälda organ.\n\nArtikel 50 har fyra delar:\n\n• 50.1: system som interagerar med människor ska tala om att de är AI\n• 50.2: leverantörer av generativ AI ska märka utdata maskinläsbart\n• 50.3: tillhandahållare av känsloigenkänning eller biometrisk kategorisering ska informera de personer som utsätts\n• 50.4: tillhandahållare ska etikettera deepfakes och AI-genererad text som publiceras i frågor av allmänt intresse\n\nKommissionen bekräftade uppförandekoden för märkning och etikettering av AI-genererat innehåll och publicerade sina slutliga riktlinjer om artikel 50 i juli 2026. Att följa koden betraktas som bevis på efterlevnad."
+          },
+          {
+            "title": "Steg 1: Hitta allt som omfattas",
+            "body": "Utgå från er AI-inventering och märk varje system med tre frågor:\n\n1. Interagerar det direkt med människor? Chattbotar, röstbotar, assistenter, automatiska svar.\n2. Skapar det text, bild, ljud eller video som lämnar organisationen? Textgeneratorer, bildverktyg, röstkloning, videoavatarer, sammanfattare, översättning.\n3. Känner det igen känslor eller kategoriserar människor utifrån biometriska uppgifter? Om ja, används det på arbetsplatsen eller i utbildning? Den användningen är förbjuden enligt artikel 5.1 f, utom av medicinska skäl eller säkerhetsskäl.\n\nNotera sedan, för varje generativt system, om det släpptes ut på marknaden före den 2 augusti 2026. Dessa äldre system har fram till den 2 december 2026 på sig att införa maskinläsbar märkning. Allt som släpps ut på marknaden från den 2 augusti 2026 måste uppfylla kravet direkt.\n\nTypiskt resultat i ett företag med 30 anställda: en chattbot på webbplatsen, två eller tre generativa verktyg hos marknad och sälj, en AI-funktion i supportsystemet som ingen registrerat, och ett mötessammanfattningsverktyg. Alla omfattas."
+          },
+          {
+            "title": "Steg 2: Åtgärda upplysningen (artikel 50.1)",
+            "body": "Människor ska informeras om att de interagerar med ett AI-system, senast vid den första interaktionen, om det inte är uppenbart för en normalt informerad och uppmärksam person. En rad i användarvillkoren räcker inte. Riktlinjerna förväntar sig en tydlig, tidig och tillgänglig upplysning.\n\nFormulering som fungerar för en chattbot: 'Du chattar med en AI-assistent. En mänsklig kollega kan ta över när som helst; skriv \"människa\" för att be om det.'\n\nFör röstsystem: meddela det hörbart innan samtalet börjar, inte bara i en meny som den som ringer kan hoppa över. När AI:n lämnar över till en person, säg det, så att motparten alltid vet vem som talar.\n\nKontrollera tillgängligheten: läsbart med skärmläsare, tillgängligt på alla språk tjänsten erbjuds på, och synligt utan att man behöver hålla muspekaren över något. Artikel 50.5 kräver att informationen är tydlig, urskiljbar och tillgänglig för personer med funktionsnedsättning.\n\nBevis att spara: en daterad skärmdump eller inspelning av upplysningen i det faktiska gränssnittet."
+          },
+          {
+            "title": "Steg 3: Verifiera maskinläsbar märkning (artikel 50.2)",
+            "body": "Märkningsskyldigheten ligger på leverantören av det generativa systemet. Om ni bygger ett sådant ska dess utdata märkas i ett maskinläsbart format som är effektivt, driftskompatibelt, robust och tillförlitligt så långt det är tekniskt möjligt. I praktiken kombinerar man tekniker: en omärkbar vattenstämpel plus ursprungsmetadata som C2PA-innehållsintyg, och ett sätt för andra att upptäcka märkningen.\n\nOm ni använder ett tredjepartsverktyg är ni tillhandahållare. Er uppgift är att skriftligen bekräfta hur leverantören märker utdata och om den har undertecknat uppförandekoden, och att se till att ert eget redigerings- och publiceringsflöde inte tar bort märkningen. Testa den verkliga vägen: generera, redigera, skala om, ladda upp till webbplatsen och till sociala medier, och kontrollera att märkningen överlever.\n\nFör äldre system som ännu inte märker sin utdata: skriv en daterad åtgärdsplan med ansvarig och en reservlösning om leverantören inte hinner klart till den 2 december 2026.\n\nBevis att spara: leverantörsintyg, en teknisk not om er egen märkningsmetod och ett testprotokoll för flödet."
+          },
+          {
+            "title": "Steg 4: Etikettera deepfakes och text av allmänt intresse (artikel 50.4)",
+            "body": "Tillhandahållare ska synligt etikettera AI-genererat eller manipulerat bild-, ljud- eller videoinnehåll som liknar verkliga personer, platser, föremål eller händelser. Sätt etiketten på själva materialet, inte bara i en bildtext som kan skiljas från det. För uppenbart konstnärliga, satiriska eller fiktiva verk kan etiketten vara diskretare så att den inte förstör verket.\n\nAI-genererad eller manipulerad text som publiceras för att informera allmänheten i frågor av allmänt intresse ska också etiketteras, om inte en namngiven person har granskat den och bär det redaktionella ansvaret. Bestäm per kanal om ni etiketterar eller tillämpar mänsklig granskning, och för en granskningslogg för allt ni åberopar undantaget för.\n\nInnehåll som skapats före den 2 augusti 2026 behöver inte etiketteras i efterhand. Rent hjälpande redigering, som stavningskontroll eller mindre bildjusteringar, faller utanför märkningsskyldigheten.\n\nSkriv en innehållspolicy på en sida: vem etiketterar vad, med vilken formulering, och vilka undantag som gäller. Länka den från marknadsavdelningens handbok."
+          },
+          {
+            "title": "Steg 5: Spara bevisen och utse en ansvarig",
+            "body": "Myndigheter kan begära information och bevis med kort varsel. Spara skärmdumpar, leverantörsintyg, policyer och testprotokoll i en indexerad mapp, och utse en person som äger efterlevnaden av artikel 50 och går igenom checklistan minst var sjätte månad.\n\nTvå kontroller till innan ni avslutar genomgången:\n\n• Känsloigenkänning eller biometrisk kategorisering som används utanför arbetsplatsen ska upplysas om för de personer som utsätts, och personuppgiftsbehandlingen ska följa GDPR.\n• Inget system i inventeringen skapar intima bilder utan samtycke eller kan användas som 'avklädningsverktyg'. Det är helt förbjudet sedan 2026 års ändringar.\n\nPersonal som hanterar chattbotar eller producerar AI-genererat innehåll bör genomföra den här modulen. Det räknas också som en åtgärd för AI-kunnighet enligt artikel 4, så registrera genomförandet.\n\nChecklistan 'Artikel 50: transparensberedskap' i Comply AI speglar de här fem stegen med framstegsspårning och en bevisanvisning för varje punkt."
+          }
+        ],
+        "quiz": [
+          {
+            "question": "Sedan när gäller transparensskyldigheterna i artikel 50?",
+            "options": ["2 februari 2025", "2 augusti 2026", "2 december 2027", "De sköts upp tillsammans med högriskreglerna"],
+            "correct": 1,
+            "explanation": "Artikel 50 behöll sitt ursprungliga datum, den 2 augusti 2026. Endast högriskskyldigheterna sköts upp genom den digitala omnibusen."
+          },
+          {
+            "question": "Vem bär skyldigheten att märka generativ AI-utdata maskinläsbart?",
+            "options": ["Tillhandahållaren", "Leverantören av det generativa AI-systemet", "Slutanvändaren", "Marknadskontrollmyndigheten"],
+            "correct": 1,
+            "explanation": "Artikel 50.2 lägger märkningsskyldigheten på leverantörer. Tillhandahållare ska bekräfta leverantörens metod och undvika att ta bort märkningen."
+          },
+          {
+            "question": "Ett äldre generativt system som släpptes ut på marknaden 2025 och ännu inte märker sin utdata måste göra det senast:",
+            "options": ["2 augusti 2026", "2 december 2026", "2 december 2027", "2 augusti 2028"],
+            "correct": 1,
+            "explanation": "Omnibusens övergångsperiod för system som redan fanns på marknaden före den 2 augusti 2026 löper ut den 2 december 2026."
+          },
+          {
+            "question": "När får AI-genererad text i en fråga av allmänt intresse publiceras utan etikett?",
+            "options": ["Aldrig", "När en namngiven person har granskat den och bär det redaktionella ansvaret", "När den är kortare än 500 ord", "När AI-verktyget har öppen källkod"],
+            "correct": 1,
+            "explanation": "Artikel 50.4 upphäver etiketteringsskyldigheten för text som genomgått mänsklig granskning där någon bär redaktionellt ansvar."
+          },
+          {
+            "question": "Vilket av följande är förbjudet snarare än bara föremål för transparenskrav?",
+            "options": ["En chattbot på webbplatsen", "Känsloigenkänning av anställda på arbetsplatsen", "En AI-genererad produktbild med etikett", "Ett mötessammanfattningsverktyg"],
+            "correct": 1,
+            "explanation": "Artikel 5.1 f förbjuder känsloigenkänning på arbetsplatsen och i utbildning, utom av medicinska skäl eller säkerhetsskäl."
+          }
+        ]
+      }
+    }
+  },
+  "checklists": {
+    "chk_article50_readiness": {
+      "title": "Artikel 50: transparensberedskap",
+      "description": "En stegvis genomgång av varje AI-system som pratar med människor eller skapar innehåll, mot de transparensskyldigheter som gäller sedan den 2 augusti 2026. Gå igenom den en gång per system och spara den sedan som bevis.",
+      "sections": [
+        {
+          "id": "scope",
+          "title": "1. Hitta alla system som omfattas",
+          "items": [
+            {"id": "scope_interactive", "text": "Lista varje AI-system som interagerar direkt med människor: chattbotar, röstbotar, virtuella assistenter, automatiska e-post- eller meddelandesvar.", "guidance": "Ta med AI-funktioner i SaaS-verktyg ni inte byggt själva, till exempel en supportbot eller en webbplatswidget. Ni är tillhandahållare.", "evidence": "Inventeringsposter märkta 'interagerar med människor'"},
+            {"id": "scope_generative", "text": "Lista varje AI-system som skapar text, bild, ljud eller video, oavsett om det är för internt bruk eller publicering.", "guidance": "Textgeneratorer, bildverktyg, röstkloning, videoavatarer, sammanfattare och översättningsverktyg räknas om utdatan lämnar organisationen.", "evidence": "Inventeringsposter märkta 'skapar innehåll'"},
+            {"id": "scope_emotion", "text": "Lista varje system för känsloigenkänning eller biometrisk kategorisering, och bekräfta att inget används på arbetsplatsen eller i utbildning.", "guidance": "Användning på arbetsplatsen och i utbildning är förbjuden enligt artikel 5.1 f, utom av medicinska skäl eller säkerhetsskäl. I övrigt tillåtet med upplysning.", "evidence": "Daterad anteckning från inventeringsgenomgången"},
+            {"id": "scope_legacy", "text": "Markera vilka generativa system som släpptes ut på marknaden eller togs i bruk före den 2 augusti 2026.", "guidance": "Dessa system har fram till den 2 december 2026 på sig att införa maskinläsbar märkning. System som släpps ut från den 2 augusti 2026 måste uppfylla kravet direkt.", "evidence": "Lanserings- eller driftsättningsdatum per system"}
+          ]
+        },
+        {
+          "id": "disclosure",
+          "title": "2. Tala om att det är AI (artikel 50.1)",
+          "items": [
+            {"id": "disc_wording", "text": "Varje chattbot eller assistent upplyser om att den är ett AI-system vid eller före den första interaktionen.", "guidance": "Förslag på formulering: 'Du chattar med en AI-assistent. En mänsklig kollega kan ta över när som helst; skriv \"människa\" för att be om det.' Förlita er inte på en rad i användarvillkoren.", "evidence": "Skärmdump av upplysningen i det faktiska gränssnittet"},
+            {"id": "disc_voice", "text": "Röst- och telefonsystem meddelar att den som ringer talar med en AI innan samtalet börjar.", "guidance": "Upplysningen ska vara hörbar, inte bara finnas i en telefonmeny som kan hoppas över.", "evidence": "Samtalsinspelning eller utdrag ur manus"},
+            {"id": "disc_handoff", "text": "Överlämning till en människa upplyses om när den sker, så att personen vet när AI:n slutar och en människa tar vid.", "guidance": "Oklarhet om vem som talar är det vanligaste klagomålet riktlinjerna lyfter fram.", "evidence": "Dokument över samtalsdesign"},
+            {"id": "disc_accessibility", "text": "Upplysningen är tillgänglig: läsbar med skärmläsare, tillgänglig på de språk tjänsten erbjuds på, och inte dold bakom en tooltip.", "guidance": "Artikel 50.5 kräver att informationen ges på ett tydligt och urskiljbart sätt, tillgängligt för personer med funktionsnedsättning.", "evidence": "Anteckning från tillgänglighetskontroll"}
+          ]
+        },
+        {
+          "id": "marking",
+          "title": "3. Maskinläsbar märkning av skapat innehåll (artikel 50.2)",
+          "items": [
+            {"id": "mark_provider_confirmed", "text": "För varje generativt tredjepartssystem har leverantören skriftligen bekräftat hur utdatan märks (vattenstämpel, metadata, innehållsintyg) och hur den kan upptäckas.", "guidance": "Be om leverantörens uttalande om artikel 50.2 och om den undertecknat uppförandekoden för märkning och etikettering.", "evidence": "Leverantörsintyg på fil"},
+            {"id": "mark_own_systems", "text": "För generativa system ni själva levererar märks utdatan i ett maskinläsbart format som är effektivt, driftskompatibelt, robust och tillförlitligt så långt det är tekniskt möjligt.", "guidance": "Kombinera tekniker: en omärkbar vattenstämpel plus ursprungsmetadata som C2PA-innehållsintyg. Dokumentera vad ni valde och varför.", "evidence": "Teknisk not om märkningsmetod; provutdata med verifierad märkning"},
+            {"id": "mark_pipeline", "text": "Ert redigerings-, komprimerings- och publiceringsflöde tar inte bort den märkning modellen lagt till.", "guidance": "Testa den faktiska vägen från generering till publicering, inklusive omskalning av bilder och uppladdning till sociala medier.", "evidence": "Testprotokoll för flödet"},
+            {"id": "mark_legacy_deadline", "text": "Äldre generativa system (på marknaden före den 2 augusti 2026) har en daterad plan för att märka utdata senast den 2 december 2026.", "guidance": "Ansvarig, delmål med datum och en reservlösning om leverantören inte hinner klart.", "evidence": "Åtgärdsplan"}
+          ]
+        },
+        {
+          "id": "labelling",
+          "title": "4. Etikettera deepfakes och text av allmänt intresse (artikel 50.4)",
+          "items": [
+            {"id": "label_deepfake", "text": "Alla publicerade bilder, ljud eller videor som avbildar verkliga personer, platser eller händelser och är AI-genererade eller manipulerade har en synlig etikett.", "guidance": "Sätt etiketten på själva materialet, inte bara i en bildtext som kan skiljas från det. Konstnärliga eller satiriska verk kan ha en diskretare etikett som inte förstör verket.", "evidence": "Publicerade exempel med etiketter"},
+            {"id": "label_text", "text": "AI-genererad eller manipulerad text som publiceras för att informera allmänheten i frågor av allmänt intresse etiketteras, om inte en namngiven person har granskat den och bär det redaktionella ansvaret.", "guidance": "Bestäm per kanal om ni etiketterar eller tillämpar mänsklig redaktionell granskning. Anteckna granskaren för varje text ni åberopar undantaget för.", "evidence": "Redaktionell policy; granskningslogg"},
+            {"id": "label_policy", "text": "En skriftlig innehållspolicy förklarar vem som etiketterar vad, med vilken formulering, och vilka undantag som används.", "guidance": "En sida räcker. Länka den från handboken för marknad och kommunikation.", "evidence": "Innehållspolicy, version och datum"}
+          ]
+        },
+        {
+          "id": "emotion",
+          "title": "5. Känsloigenkänning och biometrisk kategorisering (artikel 50.3)",
+          "items": [
+            {"id": "emo_disclosure", "text": "Personer som utsätts för ett system för känsloigenkänning eller biometrisk kategorisering informeras om att det används innan de utsätts.", "guidance": "Skyltning, meddelande på skärm eller muntligt besked beroende på miljö. Personuppgiftsbehandlingen ska också följa GDPR.", "evidence": "Informationstext och placering"}
+          ]
+        },
+        {
+          "id": "governance",
+          "title": "6. Styrning och bevis",
+          "items": [
+            {"id": "gov_owner", "text": "En namngiven person äger efterlevnaden av artikel 50 och går igenom den här checklistan minst var sjätte månad.", "guidance": "Kommissionens riktlinjer och uppförandekoden kommer att fortsätta utvecklas; utse någon som bevakar regelutvecklingen.", "evidence": "Ansvarig namngiven i AI-styrningspolicyn"},
+            {"id": "gov_training", "text": "Personal som hanterar chattbotar eller producerar AI-genererat innehåll har genomfört modulen 'Artikel 50: beredskapsgenomgång'.", "guidance": "Det räknas också som en åtgärd för AI-kunnighet enligt artikel 4.", "evidence": "Genomförandedata från utbildningen"},
+            {"id": "gov_records", "text": "Skärmdumpar, leverantörsintyg, policyer och testprotokoll för den här checklistan förvaras så att de kan tas fram inom några dagar efter en begäran från en marknadskontrollmyndighet.", "guidance": "Myndigheterna har haft tillsynsbefogenheter sedan den 2 augusti 2026. Svarstiden spelar roll.", "evidence": "Index över bevismappen"},
+            {"id": "gov_prohibited", "text": "Inget system i inventeringen skapar intima bilder utan samtycke eller kan användas som 'avklädningsverktyg'.", "guidance": "Helt förbjudet sedan 2026 års ändringar. Kontrollera bildgenereringsverktygens skyddsmekanismer.", "evidence": "Anteckning från inventeringsgenomgången"}
+          ]
+        }
+      ]
+    },
+    "chk_article4_evidence": {
+      "title": "Artikel 4: bevispaket för AI-kunnighet",
+      "description": "De åtgärder och den dokumentation som visar att organisationen vidtagit de åtgärder för AI-kunnighet som artikel 4 kräver. När punkterna är klara har ni den bevismapp en myndighet, kund eller revisor kommer att be om.",
+      "sections": [
+        {
+          "id": "policy",
+          "title": "1. Policy och ansvar",
+          "items": [
+            {"id": "pol_policy", "text": "En kort policy för AI-kunnighet anger att organisationen vidtar åtgärder för att stödja AI-kunnigheten hos personal och andra som använder AI för dess räkning.", "guidance": "Spegla den ändrade lydelsen i artikel 4. En sida. Godkänd av ledningen.", "evidence": "Policydokument, version och godkännandedatum"},
+            {"id": "pol_owner", "text": "En namngiven person ansvarar för programmet för AI-kunnighet och dess dokumentation.", "guidance": "Ofta compliance-, HR- eller IT-ansvarig i ett mindre företag.", "evidence": "Ansvarig namngiven i policyn"}
+          ]
+        },
+        {
+          "id": "mapping",
+          "title": "2. Vem behöver vad",
+          "items": [
+            {"id": "map_roles", "text": "Roller som hanterar eller förlitar sig på AI-system är kopplade till de utbildningsmoduler de ska genomföra.", "guidance": "Exempel: alla genomför grundmodulerna; HR lägger till HR-modulen; utvecklare lägger till utvecklarmodulen; marknad lägger till modulen för kundnära verksamhet.", "evidence": "Matris roll till modul"},
+            {"id": "map_contractors", "text": "Konsulter och inhyrd personal som använder AI för organisationens räkning omfattas av samma kartläggning.", "guidance": "Artikel 4 avser 'andra personer som för deras räkning arbetar med drift och användning av AI-system'.", "evidence": "Konsultlista med utbildningsstatus"}
+          ]
+        },
+        {
+          "id": "delivery",
+          "title": "3. Genomförande och dokumentation",
+          "items": [
+            {"id": "del_completion", "text": "Genomförandedata finns för varje person som omfattas: modul, innehållsversion, resultat, datum.", "guidance": "Bevisrapporten för artikel 4 exporterar detta med ett klick.", "evidence": "Export av bevisrapport"},
+            {"id": "del_certificates", "text": "Intyg utfärdas för godkända moduler och förvaras med personal- eller compliance-dokumentationen.", "guidance": "Inte ett lagkrav, men det enklaste underlaget att visa en kund eller revisor.", "evidence": "Intygsarkiv"},
+            {"id": "del_onboarding", "text": "Nyanställda genomför de obligatoriska modulerna under sin första månad.", "guidance": "Lägg till modulerna i introduktionschecklistan.", "evidence": "Introduktionschecklista"},
+            {"id": "del_refresh", "text": "Utbildningen uppdateras när regelverket eller verktygen ändras, och minst årligen.", "guidance": "Modulen 'Regelnytt: 2026 års digitala omnibus' finns för exakt det syftet. Anteckna uppdateringsdatumet.", "evidence": "Uppdateringsschema och genomförandedatum"}
+          ]
+        },
+        {
+          "id": "operations",
+          "title": "4. Arbetssätt",
+          "items": [
+            {"id": "ops_usage_rules", "text": "Personalen har skriftliga riktlinjer för godtagbar användning av AI-verktyg, inklusive vilka data som får matas in och när en människa måste kontrollera utdatan.", "guidance": "Omfattar generativa AI-assistenter såväl som inbyggda funktioner i affärssystem.", "evidence": "Riktlinjer för godtagbar användning"},
+            {"id": "ops_escalation", "text": "Personalen vet hur de rapporterar AI-beteende som verkar felaktigt, snedvridet eller osäkert, och rapporterna loggas.", "guidance": "En gemensam inkorg eller ärendekategori räcker för ett mindre företag.", "evidence": "Dokumenterad eskaleringsväg; logg över rapporter"},
+            {"id": "ops_review", "text": "Ledningen går igenom programmet för AI-kunnighet minst en gång om året och dokumenterar resultatet.", "guidance": "Ta med genomförandegrad, brister och planen för kommande år.", "evidence": "Protokoll från ledningens genomgång"}
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,88 +1,109 @@
 import { Hono, Context, Next } from "hono";
 import { cors } from "hono/cors";
-import { handleRest } from './rest';
+import { handleRest } from "./rest";
+import { createContentRouter } from "./content";
 
 export interface Env {
     DB: D1Database;
-    SECRET: SecretsStoreSecret;
+    /** Cloudflare Secrets Store binding holding the API bearer token (production). */
+    SECRET?: SecretsStoreSecret;
+    /** Plain var fallback for local development: `wrangler dev --var API_SECRET:...`. */
+    API_SECRET?: string;
 }
 
-// # List all users
-// GET /rest/users
+// Routes
+//
+//   GET  /health                                   liveness + D1 reachability
+//   GET  /api/v1/deadlines                         public
+//   GET  /api/v1/regulatory-updates                public
+//   GET  /api/v1/training/modules                  public catalogue
+//   GET  /api/v1/training/modules/:id              auth
+//   POST /api/v1/training/modules/:id/grade        auth
+//   *    /rest/{table}[/{id}]                      auth, generic CRUD (see rest.ts)
+//   POST /query                                    auth, raw parameterised SQL
 
-// # Get filtered and sorted users
-// GET /rest/users?age=25&sort_by=name&order=desc
+let cachedSecret: string | null = null;
 
-// # Get paginated results
-// GET /rest/users?limit=10&offset=20
-
-// # Create a new user
-// POST /rest/users
-// { "name": "John", "age": 30 }
-
-// # Update a user
-// PATCH /rest/users/123
-// { "age": 31 }
-
-// # Delete a user
-// DELETE /rest/users/123
-
-export default {
-    async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
-        const app = new Hono<{ Bindings: Env }>();
-
-        // Apply CORS to all routes
-        app.use('*', async (c, next) => {
-            return cors()(c, next);
-        })
-
-        // Secret Store key value that we have set
-        const secret = await env.SECRET.get();
-
-        // Authentication middleware that verifies the Authorization header
-        // is sent in on each request and matches the value of our Secret key.
-        // If a match is not found we return a 401 and prevent further access.
-        const authMiddleware = async (c: Context, next: Next) => {
-            const authHeader = c.req.header('Authorization');
-            if (!authHeader) {
-                return c.json({ error: 'Unauthorized' }, 401);
-            }
-
-            const token = authHeader.startsWith('Bearer ')
-                ? authHeader.substring(7)
-                : authHeader;
-
-            if (token !== secret) {
-                return c.json({ error: 'Unauthorized' }, 401);
-            }
-
-            return next();
-        };
-
-        // CRUD REST endpoints made available to all of our tables
-        app.all('/rest/*', authMiddleware, handleRest);
-
-        // Execute a raw SQL statement with parameters with this route
-        app.post('/query', authMiddleware, async (c) => {
-            try {
-                const body = await c.req.json();
-                const { query, params } = body;
-
-                if (!query) {
-                    return c.json({ error: 'Query is required' }, 400);
-                }
-
-                // Execute the query against D1 database
-                const results = await env.DB.prepare(query)
-                    .bind(...(params || []))
-                    .all();
-
-                return c.json(results);
-            } catch (error: any) {
-                return c.json({ error: error.message }, 500);
-            }
-        });
-
-        return app.fetch(request, env, ctx);
+async function resolveSecret(env: Env): Promise<string | null> {
+    if (cachedSecret) return cachedSecret;
+    if (env.SECRET) {
+        try {
+            cachedSecret = await env.SECRET.get();
+            return cachedSecret;
+        } catch (err) {
+            console.warn("Secrets Store unavailable, falling back to API_SECRET var", err);
+        }
     }
-} satisfies ExportedHandler<Env>;
+    if (env.API_SECRET) {
+        cachedSecret = env.API_SECRET;
+        return cachedSecret;
+    }
+    return null;
+}
+
+function timingSafeEqual(a: string, b: string): boolean {
+    const enc = new TextEncoder();
+    const ab = enc.encode(a);
+    const bb = enc.encode(b);
+    if (ab.byteLength !== bb.byteLength) return false;
+    return crypto.subtle.timingSafeEqual(ab, bb);
+}
+
+const authMiddleware = async (c: Context<{ Bindings: Env }>, next: Next) => {
+    const secret = await resolveSecret(c.env);
+    if (!secret) {
+        return c.json({ error: "Server misconfigured: no API secret bound" }, 500);
+    }
+
+    const authHeader = c.req.header("Authorization");
+    if (!authHeader) {
+        return c.json({ error: "Unauthorized" }, 401);
+    }
+    const token = authHeader.startsWith("Bearer ") ? authHeader.substring(7) : authHeader;
+    if (!timingSafeEqual(token, secret)) {
+        return c.json({ error: "Unauthorized" }, 401);
+    }
+    return next();
+};
+
+const app = new Hono<{ Bindings: Env }>();
+
+app.use("*", cors());
+
+app.get("/health", async (c) => {
+    try {
+        await c.env.DB.prepare("SELECT 1").first();
+        return c.json({ ok: true, db: "reachable" });
+    } catch (error: any) {
+        return c.json({ ok: false, db: "unreachable", error: error.message }, 503);
+    }
+});
+
+app.route("/api/v1", createContentRouter(authMiddleware));
+
+// Generic CRUD REST endpoints for every table
+app.all("/rest/*", authMiddleware, handleRest);
+
+// Raw parameterised SQL
+app.post("/query", authMiddleware, async (c) => {
+    try {
+        const body = await c.req.json();
+        const { query, params } = body;
+
+        if (!query) {
+            return c.json({ error: "Query is required" }, 400);
+        }
+
+        const results = await c.env.DB.prepare(query)
+            .bind(...(params || []))
+            .all();
+
+        return c.json(results);
+    } catch (error: any) {
+        return c.json({ error: error.message }, 500);
+    }
+});
+
+app.notFound((c) => c.json({ error: "Not found" }, 404));
+
+export default app satisfies ExportedHandler<Env>;

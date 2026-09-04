@@ -1,0 +1,122 @@
+[
+  {
+    "id": "dl_2024_08_01_entry_into_force",
+    "effective_date": "2024-08-01",
+    "title": "AI Act enters into force",
+    "summary": "Regulation (EU) 2024/1689 (the AI Act) entered into force. No obligations applied yet; the phased application calendar started running.",
+    "legal_basis": "Article 113, Regulation (EU) 2024/1689",
+    "applies_to": ["providers", "deployers", "importers", "distributors"],
+    "status": "confirmed",
+    "changed_by": null,
+    "original_date": null,
+    "sort_order": 10
+  },
+  {
+    "id": "dl_2025_02_02_prohibitions_literacy",
+    "effective_date": "2025-02-02",
+    "title": "Prohibited practices banned; AI literacy obligation applies",
+    "summary": "Article 5 prohibitions (social scoring, manipulative or exploitative AI, untargeted facial-image scraping, emotion recognition in workplaces and schools, most real-time remote biometric identification) became enforceable. Article 4 AI literacy applies to providers and deployers.",
+    "legal_basis": "Articles 4 and 5; Article 113(a)",
+    "applies_to": ["providers", "deployers"],
+    "status": "confirmed",
+    "changed_by": null,
+    "original_date": null,
+    "sort_order": 20
+  },
+  {
+    "id": "dl_2025_08_02_gpai_governance",
+    "effective_date": "2025-08-02",
+    "title": "GPAI model obligations, governance and penalty framework apply",
+    "summary": "Chapter V obligations for providers of general-purpose AI models (technical documentation, downstream information, copyright policy, public training-content summary; extra duties for systemic-risk models) apply to models placed on the market from this date. Member States had to designate national competent authorities. The penalty framework (Article 99) applies, except Commission fines on GPAI providers, which start one year later.",
+    "legal_basis": "Chapter V (Articles 51-56); Chapter VII; Article 99; Article 113(b)",
+    "applies_to": ["gpai_providers", "member_states"],
+    "status": "confirmed",
+    "changed_by": null,
+    "original_date": null,
+    "sort_order": 30
+  },
+  {
+    "id": "dl_2026_07_27_omnibus_in_force",
+    "effective_date": "2026-07-27",
+    "title": "Digital Omnibus on AI enters into force",
+    "summary": "Regulation (EU) 2026/1744, published in the Official Journal on 24 July 2026, amended the AI Act three days after publication. It deferred high-risk obligations, softened Article 4, added a prohibition on non-consensual intimate imagery and CSAM generation, extended SME relief to small mid-caps and reorganised some enforcement competences.",
+    "legal_basis": "Regulation (EU) 2026/1744",
+    "applies_to": ["providers", "deployers", "gpai_providers"],
+    "status": "confirmed",
+    "changed_by": "Regulation (EU) 2026/1744",
+    "original_date": null,
+    "sort_order": 40
+  },
+  {
+    "id": "dl_2026_08_02_transparency_enforcement",
+    "effective_date": "2026-08-02",
+    "title": "Article 50 transparency obligations apply; enforcement powers activate",
+    "summary": "Chatbot disclosure, machine-readable marking of AI-generated content, emotion-recognition and biometric-categorisation disclosure, and deepfake and public-interest text labelling apply. The AI Office and national market-surveillance authorities can now exercise their enforcement powers, and the Commission can fine GPAI providers up to EUR 15 million or 3% of worldwide turnover.",
+    "legal_basis": "Article 50; Articles 74-94; Article 101; Article 113",
+    "applies_to": ["providers", "deployers", "gpai_providers"],
+    "status": "confirmed",
+    "changed_by": null,
+    "original_date": null,
+    "sort_order": 50
+  },
+  {
+    "id": "dl_2026_12_02_marking_grace_period",
+    "effective_date": "2026-12-02",
+    "title": "Grace period ends for machine-readable marking on legacy generative systems",
+    "summary": "Generative AI systems placed on the market or put into service before 2 August 2026 must implement Article 50(2) machine-readable marking of synthetic output by this date. Systems placed on the market from 2 August 2026 had to comply immediately.",
+    "legal_basis": "Article 50(2) as amended by Regulation (EU) 2026/1744",
+    "applies_to": ["providers"],
+    "status": "confirmed",
+    "changed_by": "Regulation (EU) 2026/1744",
+    "original_date": "2026-08-02",
+    "sort_order": 60
+  },
+  {
+    "id": "dl_2027_02_02_watermark_interoperability",
+    "effective_date": "2027-02-02",
+    "title": "Watermark-detection interoperability commitment (Transparency Code of Practice)",
+    "summary": "Signatories of the Code of Practice on marking and labelling AI-generated content commit to providing detection tools and an interoperability solution for watermark detection by this date. Voluntary for non-signatories, but the Commission treats Code adherence as evidence of Article 50 compliance.",
+    "legal_basis": "Code of Practice on Transparency of AI-Generated Content (Article 50; Article 56)",
+    "applies_to": ["providers"],
+    "status": "confirmed",
+    "changed_by": null,
+    "original_date": null,
+    "sort_order": 70
+  },
+  {
+    "id": "dl_2027_08_02_legacy_gpai",
+    "effective_date": "2027-08-02",
+    "title": "Legacy GPAI models must comply",
+    "summary": "Providers of general-purpose AI models placed on the market before 2 August 2025 must bring them into compliance with Chapter V obligations by this date.",
+    "legal_basis": "Article 111(3)",
+    "applies_to": ["gpai_providers"],
+    "status": "confirmed",
+    "changed_by": null,
+    "original_date": null,
+    "sort_order": 80
+  },
+  {
+    "id": "dl_2027_12_02_annex_iii_high_risk",
+    "effective_date": "2027-12-02",
+    "title": "Stand-alone high-risk AI (Annex III) obligations apply at the latest",
+    "summary": "Requirements for high-risk AI systems in Annex III areas (biometrics, critical infrastructure, education, employment, essential services, law enforcement, migration, justice) apply six months after the Commission confirms that harmonised standards, common specifications and guidance are available, and no later than this backstop date. Originally 2 August 2026.",
+    "legal_basis": "Article 113 as amended by Regulation (EU) 2026/1744; Articles 6, 8-27, 43, 49, 72-73",
+    "applies_to": ["providers", "deployers", "importers", "distributors"],
+    "status": "backstop",
+    "changed_by": "Regulation (EU) 2026/1744",
+    "original_date": "2026-08-02",
+    "sort_order": 90
+  },
+  {
+    "id": "dl_2028_08_02_annex_i_high_risk",
+    "effective_date": "2028-08-02",
+    "title": "High-risk AI embedded in regulated products (Annex I) obligations apply at the latest",
+    "summary": "Requirements for AI that is a safety component of, or is itself, a product covered by Annex I harmonisation legislation (medical devices, machinery, toys, lifts, vehicles, aviation and others) apply twelve months after the Commission's standards-availability decision, and no later than this backstop date. Originally 2 August 2027.",
+    "legal_basis": "Article 113 as amended by Regulation (EU) 2026/1744; Article 6(1); Annex I",
+    "applies_to": ["providers", "deployers", "importers", "distributors"],
+    "status": "backstop",
+    "changed_by": "Regulation (EU) 2026/1744",
+    "original_date": "2027-08-02",
+    "sort_order": 100
+  }
+]

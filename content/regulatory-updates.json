@@ -1,0 +1,127 @@
+[
+  {
+    "id": "upd_2026_08_02_enforcement_transparency_live",
+    "published_on": "2026-08-02",
+    "title": "AI Office and national authorities begin enforcing the AI Act; Article 50 transparency rules apply",
+    "summary": "From 2 August 2026 the Commission's AI Office and national market-surveillance authorities can exercise their enforcement powers. Article 50 transparency duties apply: people must be told when they interact with an AI system, generative AI output must carry machine-readable marks, deepfakes and AI-generated public-interest text must be labelled, and emotion-recognition or biometric-categorisation use must be disclosed. The Commission can now fine GPAI providers up to EUR 15 million or 3% of worldwide turnover, including for breaches dating back to 2 August 2025.",
+    "category": "enforcement",
+    "impact": "high",
+    "affected_roles": ["providers", "deployers", "gpai_providers"],
+    "sources": [
+      {"title": "European Commission press release: Commission starts enforcing AI Act rules and new transparency obligations", "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714"},
+      {"title": "European Commission: Safer and more transparent AI (2 August 2026)", "url": "https://commission.europa.eu/news-and-media/news/safer-and-more-transparent-ai-2026-08-02_en"},
+      {"title": "Al Jazeera: What came into force with the EU's AI Act this week, and what didn't", "url": "https://www.aljazeera.com/news/2026/8/6/what-came-into-force-with-the-eus-ai-act-this-week-and-what-didnt"}
+    ]
+  },
+  {
+    "id": "upd_2026_07_27_omnibus_in_force",
+    "published_on": "2026-07-27",
+    "title": "Digital Omnibus on AI (Regulation (EU) 2026/1744) enters into force",
+    "summary": "Published in the Official Journal on 24 July 2026 and in force three days later. Stand-alone high-risk (Annex III) obligations are deferred to six months after a Commission decision confirming that standards and guidance are available, with a backstop of 2 December 2027; Annex I embedded high-risk AI gets twelve months and a backstop of 2 August 2028. Generative systems already on the market get until 2 December 2026 for machine-readable marking. Article 4 now requires providers and deployers to take measures supporting AI literacy rather than guaranteeing a level of literacy. A new prohibition covers AI designed to generate non-consensual intimate imagery or child sexual abuse material. SME simplifications extend to small mid-caps. Article 6(3) self-assessed systems must still be registered, via a simplified procedure. The legal basis for processing special-category data for bias detection extends to all AI systems under a strict-necessity test. The AI Office gains exclusive supervision of AI systems built on a provider's own GPAI model and of systems integrated in very large online platforms and search engines.",
+    "category": "legislation",
+    "impact": "high",
+    "affected_roles": ["providers", "deployers", "gpai_providers", "importers", "distributors"],
+    "sources": [
+      {"title": "EUR-Lex: Regulation (EU) 2026/1744", "url": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng"},
+      {"title": "European Commission: AI Omnibus enters into force", "url": "https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force"},
+      {"title": "White & Case: EU AI Omnibus enters into force, amending the AI Act", "url": "https://www.whitecase.com/insight-alert/eu-ai-omnibus-enters-force-amending-ai-act"},
+      {"title": "Lewis Silkin: The Digital Omnibus on AI enters into force today", "url": "https://www.lewissilkin.com/en/insights/2026/07/27/the-digital-omnibus-on-ai-enters-into-force-today-102nedo"}
+    ]
+  },
+  {
+    "id": "upd_2026_07_transparency_code_adequate",
+    "published_on": "2026-07-20",
+    "title": "Commission confirms Transparency Code of Practice as adequate and publishes final Article 50 guidelines",
+    "summary": "The AI Office finalised the Code of Practice on marking and labelling AI-generated content and the Commission published its final guidelines on Article 50 transparency obligations. The Code operationalises the provider marking duty (Article 50(2)) and the deployer labelling duty (Article 50(4)). Content generated before 2 August 2026 need not be marked retroactively. Signatories commit to watermark-detection interoperability by 2 February 2027.",
+    "category": "code_of_practice",
+    "impact": "high",
+    "affected_roles": ["providers", "deployers"],
+    "sources": [
+      {"title": "Faegre Drinker: Commission confirms Transparency Code of Practice as adequate and publishes final guidelines", "url": "https://www.faegredrinker.com/en/insights/publications/2026/7/eu-ai-act-commission-confirms-transparency-code-of-practice-as-adequate-and-publishes-final-version-of-its-guidelines-on-transparency-obligations"},
+      {"title": "Bird & Bird: The final Transparency Code of Practice", "url": "https://www.twobirds.com/en/insights/2026/taking-the-eu-ai-act-to-practice-the-final-transparency-code-of-practice"},
+      {"title": "Addleshaw Goddard: Code of Practice on marking and labelling AI-generated content", "url": "https://www.addleshawgoddard.com/en/insights/insights-briefings/2026/technology/eu-ai-act-code-practice-marking-labelling-ai-generated-content/"}
+    ]
+  },
+  {
+    "id": "upd_2026_07_12_en_18286_approved",
+    "published_on": "2026-07-12",
+    "title": "EN 18286:2026 approved: first AI Act harmonised-standard candidate (quality management, Article 17)",
+    "summary": "CEN and CENELEC approved EN 18286:2026 'Artificial intelligence - Quality management system for EU AI Act regulatory purposes', drafted by CEN-CLC/JTC 21 under standardisation request M/613. It specifies the Article 17 quality management system for providers of high-risk AI systems across the AI lifecycle. It is not yet cited in the Official Journal, so it does not yet confer a presumption of conformity. Companion drafts remain in progress: prEN 18228 (risk management), prEN 18229 (trustworthiness framework: logging, transparency, human oversight), prEN 18282 (cybersecurity) and prEN 18284 (data quality and governance).",
+    "category": "standards",
+    "impact": "medium",
+    "affected_roles": ["providers"],
+    "sources": [
+      {"title": "CEN-CENELEC: EN 18286 in the spotlight", "url": "https://www.cencenelec.eu/news-events/news/2026/en-in-the-spotlight/2026-07-30-ai-quality-management/"},
+      {"title": "BSI: EN 18286:2026 provides a framework for AI quality management under the EU AI Act", "url": "https://www.bsigroup.com/en-GB/insights-and-media/media-centre/press-releases/2026/july/en-18286-provides-a-framework-for-ai-quality-management-under-the-eu-ai-act/"},
+      {"title": "Adam Leon Smith: EN 18286:2026 is finally published", "url": "https://adamleonsmith.substack.com/p/en-182862026-is-finally-published"}
+    ]
+  },
+  {
+    "id": "upd_2026_06_29_council_adopts_omnibus",
+    "published_on": "2026-06-29",
+    "title": "Council formally adopts the Digital Omnibus on AI",
+    "summary": "Following the European Parliament's plenary vote on 16 June 2026 (423 in favour, 57 against, 174 abstentions), the Council gave final approval on 29 June 2026, clearing the way for publication in the Official Journal.",
+    "category": "legislation",
+    "impact": "high",
+    "affected_roles": ["providers", "deployers", "gpai_providers"],
+    "sources": [
+      {"title": "Sofia Globe: European Parliament approves AI Act amendments, 'nudifier' ban", "url": "https://sofiaglobe.com/2026/06/16/european-parliament-approves-ai-act-amendments-nudifier-ban/"},
+      {"title": "iubenda: Parliament adopts the AI Omnibus, Council sign-off next", "url": "https://www.iubenda.com/en/blog/ai-omnibus-parliament-adoption-june-2026/"},
+      {"title": "Sidley: EU lawmakers reach provisional agreement to delay key EU AI Act obligations", "url": "https://datamatters.sidley.com/2026/06/22/eu-lawmakers-reach-provisional-agreement-to-delay-key-eu-ai-act-obligations/"}
+    ]
+  },
+  {
+    "id": "upd_2026_05_07_provisional_agreement",
+    "published_on": "2026-05-07",
+    "title": "Council and Parliament reach provisional agreement on the Digital Omnibus on AI",
+    "summary": "Trilogue negotiators agreed the compromise text: deferral of high-risk obligations with hard backstops, a four-month marking grace period for legacy generative systems, a softened Article 4, the new prohibition on non-consensual intimate content and CSAM generation, and retention of Article 6(3) registration in simplified form.",
+    "category": "legislation",
+    "impact": "high",
+    "affected_roles": ["providers", "deployers", "gpai_providers"],
+    "sources": [
+      {"title": "Council of the EU press release: Artificial intelligence - Council and Parliament agree to simplify and streamline rules", "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"},
+      {"title": "Gibson Dunn: EU AI Act Omnibus agreement - postponed high-risk deadlines and other key changes", "url": "https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/"},
+      {"title": "William Fry: Omnibus deal reached - postponed deadlines, watermarking compromise and the nudification prohibition", "url": "https://www.williamfry.com/knowledge/eu-ai-act-omnibus-deal-reached-postponed-deadlines-watermarking-compromise-and-the-nudificiation-prohibition/"}
+    ]
+  },
+  {
+    "id": "upd_2025_11_19_omnibus_proposal",
+    "published_on": "2025-11-19",
+    "title": "Commission proposes the Digital Omnibus on AI",
+    "summary": "The Commission proposed targeted amendments to the AI Act to link high-risk application dates to the availability of harmonised standards, simplify obligations for smaller companies and centralise some supervision in the AI Office.",
+    "category": "legislation",
+    "impact": "medium",
+    "affected_roles": ["providers", "deployers", "gpai_providers"],
+    "sources": [
+      {"title": "DLA Piper: The Digital AI Omnibus - proposed deferral of high-risk AI obligations", "url": "https://knowledge.dlapiper.com/dlapiperknowledge/globalemploymentlatestdevelopments/2026/The-Digital-AI-Omnibus-Proposed-deferral-of-high-risk-AI-obligations-under-the-AI-Act"},
+      {"title": "European Parliament Legislative Train: Digital Omnibus on AI", "url": "https://www.europarl.europa.eu/legislative-train/package-digital-package/file-digital-omnibus-on-ai"}
+    ]
+  },
+  {
+    "id": "upd_2025_08_02_gpai_obligations_apply",
+    "published_on": "2025-08-02",
+    "title": "GPAI model obligations apply; national authorities designated",
+    "summary": "Chapter V obligations for providers of general-purpose AI models apply to models placed on the market from this date. Models already on the market have until 2 August 2027. Commission enforcement against GPAI providers starts on 2 August 2026.",
+    "category": "legislation",
+    "impact": "high",
+    "affected_roles": ["gpai_providers", "member_states"],
+    "sources": [
+      {"title": "Latham & Watkins: GPAI model obligations in force and final GPAI Code of Practice in place", "url": "https://www.lw.com/en/insights/eu-ai-act-gpai-model-obligations-in-force-and-final-gpai-code-of-practice-in-place"},
+      {"title": "European Commission: AI Act policy page", "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"}
+    ]
+  },
+  {
+    "id": "upd_2025_07_10_gpai_code_and_guidelines",
+    "published_on": "2025-07-10",
+    "title": "Final GPAI Code of Practice published; Commission GPAI guidelines and training-data summary template follow",
+    "summary": "The AI Office published the final General-Purpose AI Code of Practice with chapters on Transparency, Copyright, and Safety and Security. Later in July 2025 the Commission issued guidelines clarifying the scope of GPAI obligations and a mandatory template for the public summary of training content.",
+    "category": "guidance",
+    "impact": "medium",
+    "affected_roles": ["gpai_providers"],
+    "sources": [
+      {"title": "Jones Day: European Commission publishes General-Purpose AI Code of Practice", "url": "https://www.jonesday.com/en/insights/2025/08/eu-ai-act-european-commission-publishes-generalpurpose-ai-code-of-practice"},
+      {"title": "Paul, Weiss: Commission publishes guidelines on GPAI obligations and training-data disclosure template", "url": "https://www.paulweiss.com/insights/client-memos/eu-commission-publishes-guidelines-on-general-purpose-ai-obligations-as-well-as-training-data-disclosure-template-further-clarity-as-the-countdown-to-enforcement-begins"},
+      {"title": "WilmerHale: Commission issues guidelines for providers of GPAI models", "url": "https://www.wilmerhale.com/en/insights/blogs/wilmerhale-privacy-and-cybersecurity-law/20250724-european-commission-issues-guidelines-for-providers-of-general-purpose-ai-models"}
+    ]
+  }
+]
